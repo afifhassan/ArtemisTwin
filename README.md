@@ -1,4 +1,4 @@
-# ArtemisTwin 🚀
+# ArtemisTwin
 
 **Quantitative Earth-to-Moon & Mars Analog Screening Platform**
 
@@ -6,7 +6,7 @@ ArtemisTwin is an interactive screening and educational tool designed to compare
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Interactive Candidate Map**: Explore and filter terrestrial analog candidate sites worldwide.
 - **Target Comparisons**: Contrast terrestrial environments against lunar and Martian terrain and surface profiles.
@@ -41,7 +41,7 @@ Then open your browser at **`http://127.0.0.1:8080/`**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 ├── site/               # Production-ready static web application
@@ -56,7 +56,7 @@ Then open your browser at **`http://127.0.0.1:8080/`**.
 
 ---
 
-## 🤖 AI & Tooling Attributions
+##  AI & Tooling Attributions
 
 This project leveraged modern artificial intelligence tools across its design and development lifecycle:
 
