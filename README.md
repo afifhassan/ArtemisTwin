@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ArtemisTwin — frontend candidate 0.8.0-rc.1
 
 Prepared 9 November 2026 for the project team. **Review candidate, not a published or scientifically certified release.**
@@ -89,3 +90,7 @@ model-dependent exercise and are labelled as such.
 See **`SCREENING_INTEGRATION.md`** for run commands, provenance, explicit missing layers/Earth limits, and
 `VERIFICATION_SCREENING.json` (600+ checks). The release documents above are unchanged; the original checksum
 manifest is preserved as `SHA256_RELEASE_0.8.0-rc.1.json`, and `SHA256.json` covers the extended delivery.
+=======
+# ArtemisTwin
+Quantitative Earth-to-Moon &amp; Mars analog screening engine. Compares any Earth site against NASA LOLA, Diviner, and MOLA target envelopes across 12 environmental layers using live AWS elevation tiles, NASA POWER climatology, and 4,000-draw Monte Carlo uncertainty modeling.
+>>>>>>> 439ab250e21702e2713cdd468d9ea51fa25c5ade
