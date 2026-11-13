@@ -1,0 +1,3293 @@
+{
+  "version": "1.0",
+  "scope": "additive screening integration; does not replace the 0.8.0-rc.1 verification",
+  "generated": "2026-11-11T10:24:36.917021+00:00",
+  "checks": 656,
+  "passed": 656,
+  "failed": 0,
+  "pass": true,
+  "maxFitRecomputeError": 0.00652174,
+  "liveProbes": {},
+  "results": [
+    {
+      "name": "public/data/layers.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/layers.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layers.csv mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/layers.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/layers.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "layers.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/sites.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/sites.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sites.csv mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/sites.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/sites.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sites.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/targets.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/targets.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "targets.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/scores.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/scores.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "scores.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/model.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/model.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "model.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/provenance.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/provenance.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "provenance.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/earth_analog_sites.geojson exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/earth_analog_sites.geojson exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "earth_analog_sites.geojson mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/sites_extracted.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/sites_extracted.csv exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sites_extracted.csv mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/manifest.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "site/data/manifest.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest.json mirror is byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "public/data/catalog.json present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mirrors are byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog atacama: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog atacama: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog atacama: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog atacama: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog atacama: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog haughton: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog haughton: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog haughton: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog haughton: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog haughton: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog svalbard: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog svalbard: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog svalbard: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog svalbard: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog svalbard: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mcmurdo: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mcmurdo: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mcmurdo: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mcmurdo: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mcmurdo: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog riotinto: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog riotinto: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog riotinto: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog riotinto: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog riotinto: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog hawaii: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog hawaii: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog hawaii: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog hawaii: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog hawaii: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mauna_ulu_window: studyArea present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mauna_ulu_window: CRS is EPSG:4326",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mauna_ulu_window: studyId + label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mauna_ulu_window: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog mauna_ulu_window: centre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "atacama: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "atacama: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "haughton: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "haughton: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "svalbard: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "svalbard: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mcmurdo: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mcmurdo: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riotinto: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riotinto: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hawaii: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hawaii: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mauna_ulu_window: 49-point E\u2013W profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mauna_ulu_window: grid cell recorded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "model method version present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "13 layer registry rows (12 groups; temperature split)",
+      "pass": true,
+      "detail": "13 registry rows"
+    },
+    {
+      "name": "targets present",
+      "pass": true,
+      "detail": "3 targets"
+    },
+    {
+      "name": "sites present",
+      "pass": true,
+      "detail": "7 sites"
+    },
+    {
+      "name": "every target has every purpose",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "56.5417 vs 56.54"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/atacama: fit recomputes",
+      "pass": true,
+      "detail": "49.9497 vs 49.95"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "48.1720 vs 48.17"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "40.2590 vs 40.26"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "32.2190 vs 32.22"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "28.1590 vs 28.16"
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility/haughton: fit recomputes",
+      "pass": true,
+      "detail": "10.3267 vs 10.33"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "33.2952 vs 33.3"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "31.0339 vs 31.03"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/atacama: fit recomputes",
+      "pass": true,
+      "detail": "27.3743 vs 27.37"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "25.3222 vs 25.32"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "21.0961 vs 21.1"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "19.1917 vs 19.19"
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection/haughton: fit recomputes",
+      "pass": true,
+      "detail": "6.9478 vs 6.95"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "31.0817 vs 31.08"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "28.4400 vs 28.44"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/atacama: fit recomputes",
+      "pass": true,
+      "detail": "26.2757 vs 26.28"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "25.5250 vs 25.52"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "22.2850 vs 22.28"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "19.4250 vs 19.42"
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test/haughton: fit recomputes",
+      "pass": true,
+      "detail": "10.3267 vs 10.33"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "62.8036 vs 62.8"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "54.4459 vs 54.45"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/atacama: fit recomputes",
+      "pass": true,
+      "detail": "51.8397 vs 51.84"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "45.2108 vs 45.21"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "35.2521 vs 35.25"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "31.7572 vs 31.76"
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics/haughton: fit recomputes",
+      "pass": true,
+      "detail": "8.2371 vs 8.24"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/atacama: fit recomputes",
+      "pass": true,
+      "detail": "71.2447 vs 71.24"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "66.7467 vs 66.75"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "65.7453 vs 65.74"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "48.3900 vs 48.39"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "40.7640 vs 40.76"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "37.4053 vs 37.41"
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility/haughton: fit recomputes",
+      "pass": true,
+      "detail": "23.2520 vs 23.25"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "60.7717 vs 60.77"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/atacama: fit recomputes",
+      "pass": true,
+      "detail": "44.3357 vs 44.34"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "39.3939 vs 39.39"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "39.3230 vs 39.32"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/haughton: fit recomputes",
+      "pass": true,
+      "detail": "36.6565 vs 36.66"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "30.9565 vs 30.95"
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "27.4504 vs 27.45"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "57.6400 vs 57.64"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/atacama: fit recomputes",
+      "pass": true,
+      "detail": "44.0820 vs 44.08"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "42.7667 vs 42.77"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/haughton: fit recomputes",
+      "pass": true,
+      "detail": "41.6660 vs 41.66"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "35.0153 vs 35.02"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "32.2653 vs 32.26"
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "29.5773 vs 29.58"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/atacama: fit recomputes",
+      "pass": true,
+      "detail": "71.6799 vs 71.68"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "67.9124 vs 67.91"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "64.5979 vs 64.6"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "46.5722 vs 46.57"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "37.7495 vs 37.75"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "33.4304 vs 33.43"
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics/haughton: fit recomputes",
+      "pass": true,
+      "detail": "19.1794 vs 19.18"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "54.5550 vs 54.56"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "38.1233 vs 38.12"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/haughton: fit recomputes",
+      "pass": true,
+      "detail": "37.7737 vs 37.77"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "24.1367 vs 24.14"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "13.4617 vs 13.46"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "4.8033 vs 4.8"
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility/atacama: fit recomputes",
+      "pass": true,
+      "detail": "0.0000 vs 0.0"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "43.2448 vs 43.25"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/haughton: fit recomputes",
+      "pass": true,
+      "detail": "37.2578 vs 37.26"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "28.3630 vs 28.36"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "21.9174 vs 21.92"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "14.2652 vs 14.27"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "5.3783 vs 5.38"
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/ice_detection/atacama: fit recomputes",
+      "pass": true,
+      "detail": "0.0000 vs 0.0"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "40.0337 vs 40.03"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/haughton: fit recomputes",
+      "pass": true,
+      "detail": "35.8090 vs 35.81"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "32.9083 vs 32.91"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "16.8033 vs 16.8"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "10.9367 vs 10.94"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "4.1233 vs 4.12"
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test/atacama: fit recomputes",
+      "pass": true,
+      "detail": "0.0000 vs 0.0"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics: one row per site",
+      "pass": true,
+      "detail": "7 rows"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/svalbard: fit recomputes",
+      "pass": true,
+      "detail": "55.8614 vs 55.86"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/haughton: fit recomputes",
+      "pass": true,
+      "detail": "41.1553 vs 41.15"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mauna_ulu_window: fit recomputes",
+      "pass": true,
+      "detail": "40.4794 vs 40.48"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/hawaii: fit recomputes",
+      "pass": true,
+      "detail": "23.7165 vs 23.72"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/mcmurdo: fit recomputes",
+      "pass": true,
+      "detail": "10.7639 vs 10.76"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/riotinto: fit recomputes",
+      "pass": true,
+      "detail": "6.7268 vs 6.73"
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: completeness present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: layer count present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: band ordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: fit in range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: pressure excluded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics/atacama: fit recomputes",
+      "pass": true,
+      "detail": "0.0000 vs 0.0"
+    },
+    {
+      "name": "maximum fit recomputation error < 0.01",
+      "pass": true,
+      "detail": "0.006522"
+    },
+    {
+      "name": "GeoJSON has one feature per site",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "atacama: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "atacama: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "atacama: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "haughton: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "haughton: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "haughton: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "svalbard: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "svalbard: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "svalbard: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mcmurdo: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mcmurdo: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mcmurdo: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riotinto: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riotinto: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riotinto: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hawaii: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hawaii: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hawaii: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mauna_ulu_window: closed ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mauna_ulu_window: 4 unique corners",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mauna_ulu_window: role declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash layers.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash layers.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash sites.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash sites.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash targets.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash scores.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash model.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash provenance.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash earth_analog_sites.geojson",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest hash sites_extracted.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index references screening CSS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index references screening entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present analog-fit.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present comparison.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present custom-site.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present dom.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present format.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present live-apis.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present live-view.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present map.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present metrics.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present portfolio.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present profile.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present screening.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present screens.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present state.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "module present viewer.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no NASA credentials bundled in site/",
+      "pass": true,
+      "detail": "0 matches"
+    }
+  ]
+}

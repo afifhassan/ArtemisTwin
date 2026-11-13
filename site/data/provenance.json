@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:28Z",
+  "credentials": {
+    "earthdata_user": "afifhassan",
+    "earthdata_token_expires": "2027-01-09T19:24:20+00:00",
+    "nasa_api_key": "present in .env; never bundled into site/"
+  },
+  "pipeline_stages": [
+    {
+      "stage": 1,
+      "script": "scripts/download_dems.py",
+      "output": "data/derived/dem_manifest.json"
+    },
+    {
+      "stage": 2,
+      "script": "scripts/derive_slope_roughness.py",
+      "output": "data/derived/terrain_metrics.json"
+    },
+    {
+      "stage": 3,
+      "script": "scripts/nasa_power_climate.py",
+      "output": "data/derived/earth_climate.json"
+    },
+    {
+      "stage": 4,
+      "script": "scripts/zonal_stats_extractor.py",
+      "output": "data/derived/site_records.json"
+    },
+    {
+      "stage": 5,
+      "script": "scripts/scoring_engine.py",
+      "output": "public/data/scores.json"
+    },
+    {
+      "stage": 6,
+      "script": "scripts/export_data.py",
+      "output": "public/data/ + site/data/"
+    }
+  ],
+  "dem_manifest": {
+    "schemaVersion": "1.0",
+    "checked": "2026-11-13T07:10:18Z",
+    "earthdata_user": "afifhassan",
+    "earthdata_token_expires": "2027-01-09T19:24:20+00:00",
+    "download_budget_mb": 250.0,
+    "downloads": [
+      {
+        "id": "moon_lola_118m",
+        "body": "Moon",
+        "product": "LRO LOLA Global LDEM 118 m (Mar 2014)",
+        "url": "https://planetarymaps.usgs.gov/mosaic/Moon_LRO_LOLA_Global_LDEM_118m_Mar2014.tif",
+        "product_page": "https://astrogeology.usgs.gov/search/map/moon_lro_lola_global_ldem_118m",
+        "local_path": "data/raw_dems/moon_lola_118m.tif",
+        "status": "endpoint_retired",
+        "size_bytes": null,
+        "size_mb": null,
+        "http_status": 404,
+        "tls_verified": true,
+        "sha256": null,
+        "checked": "2026-11-13T07:10:08Z",
+        "note": "Legacy URL returned HTTP 404. USGS reorganized its planetary map service; download from the product page (https://astrogeology.usgs.gov/search/map/moon_lro_lola_global_ldem_118m) and place the file here.",
+        "citation": "Smith et al. (2010), LRO LOLA; USGS Astrogeology mosaic."
+      },
+      {
+        "id": "mars_mola_463m",
+        "body": "Mars",
+        "product": "MGS MOLA DEM 463 m",
+        "url": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_geotiff/Mars_MGS_MOLA_DEM_463m.tif",
+        "product_page": "https://astrogeology.usgs.gov/search/?q=MOLA%20DEM%20463",
+        "local_path": "data/raw_dems/mars_mola_463m.tif",
+        "status": "endpoint_retired",
+        "size_bytes": null,
+        "size_mb": null,
+        "http_status": 404,
+        "tls_verified": true,
+        "sha256": null,
+        "checked": "2026-11-13T07:10:18Z",
+        "note": "Legacy URL returned HTTP 404. USGS reorganized its planetary map service; download from the product page (https://astrogeology.usgs.gov/search/?q=MOLA%20DEM%20463) and place the file here.",
+        "citation": "Smith et al. (2001), MGS MOLA; USGS Astrogeology mosaic."
+      }
+    ],
+    "earthdata_dem": {
+      "status": "not_requested",
+      "note": "Pass --earthdata-dem after installing earthaccess + rasterio to fetch NASADEM/COP-30 tiles."
+    },
+    "earth_terrain_strategy": {
+      "primary": "AWS Terrain Tiles (Terrarium) sampled per 2 × 2 km site window",
+      "why": "Public, keyless, cacheable and adequate for footprint-scale slope/TRI. NASADEM_NC and COP_DEM_GLO_30_DG remain the preferred products once earthaccess/rasterio are installed.",
+      "upgrade_path": "pip install earthaccess rasterio && python scripts/download_dems.py --earthdata-dem"
+    }
+  },
+  "appeears": {
+    "status": "auth_failed",
+    "note": "{'error': '{\"message\": \"You don\\'t have the permission to access the requested resource. It is either read-protected or not readable by the server.\"}\\n'}",
+    "token_check": {
+      "http_status": 403,
+      "ok": false
+    },
+    "task_id": null
+  },
+  "diviner": {
+    "status": "endpoint_unavailable",
+    "note": "The legacy PDS path cited in the brief no longer resolves (label and raster returned 404). Published Diviner thermal context is recorded above; no raster measurement is claimed. Use the current PDS Diviner bundle or the Diviner Data Portal to enable raster statistics.",
+    "raster_mb": null,
+    "published_context": {
+      "note": "Published Diviner results describe the Moon's global surface temperature range as roughly 40 K in permanently shadowed polar terrain to about 400 K at the sub-solar point near noon.",
+      "source": "Williams et al. (2017), Icarus 283, 300-325, doi:10.1016/j.icarus.2016.08.012",
+      "use": "Context for the target envelopes only. This build does not claim a site-specific Diviner measurement."
+    }
+  },
+  "pipeline_run": {
+    "generated": "2026-11-12T10:11:12Z",
+    "ok": true,
+    "stages": [
+      {
+        "stage": "download",
+        "status": "ok",
+        "seconds": 3.8,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/download_dems.py"
+      },
+      {
+        "stage": "terrain",
+        "status": "ok",
+        "seconds": 3.7,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/derive_slope_roughness.py"
+      },
+      {
+        "stage": "climate",
+        "status": "ok",
+        "seconds": 0.3,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/nasa_power_climate.py"
+      },
+      {
+        "stage": "appeears",
+        "status": "ok",
+        "seconds": 1.1,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/appeears_lst_download.py"
+      },
+      {
+        "stage": "diviner",
+        "status": "ok",
+        "seconds": 4.7,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/diviner_lunar_temp.py"
+      },
+      {
+        "stage": "zonal",
+        "status": "ok",
+        "seconds": 0.2,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/zonal_stats_extractor.py"
+      },
+      {
+        "stage": "scoring",
+        "status": "ok",
+        "seconds": 0.5,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/scoring_engine.py"
+      },
+      {
+        "stage": "export",
+        "status": "ok",
+        "seconds": 0.3,
+        "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/export_data.py"
+      }
+    ]
+  },
+  "terrain_method": {
+    "slope": "Horn (1981) 3×3 finite difference, degrees",
+    "roughness": "Riley et al. (1999) Terrain Ruggedness Index, dimensionless",
+    "earth_dem": "AWS Terrain Tiles (Terrarium) z14, bilinearly sampled",
+    "planetary": {
+      "Moon": {
+        "status": "source_dem_absent",
+        "output": null,
+        "note": "Global planetary slope rasters are deferred until stage 1 downloads a DEM."
+      },
+      "Mars": {
+        "status": "source_dem_absent",
+        "output": null,
+        "note": "Global planetary slope rasters are deferred until stage 1 downloads a DEM."
+      }
+    }
+  },
+  "terrain_by_site": {
+    "atacama": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:18Z"
+    },
+    "haughton": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:19Z"
+    },
+    "svalbard": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:20Z"
+    },
+    "mcmurdo": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:21Z"
+    },
+    "riotinto": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:21Z"
+    },
+    "hawaii": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:21Z"
+    },
+    "mauna_ulu_window": {
+      "status": "ok",
+      "source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+      "cell_m": 12.5,
+      "derived": "2026-11-13T07:10:21Z"
+    }
+  },
+  "climate_by_site": {
+    "atacama": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=-67.980000&latitude=-23.860000&format=JSON",
+        "retrieved": "2026-11-10T22:37:12Z",
+        "sha256": "24924429bb14cd4647be0727f2e5ffed3771df1feb2cc1873b7ad81cd8652cc2",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "haughton": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=-75.400000&latitude=75.380000&format=JSON",
+        "retrieved": "2026-11-10T22:37:13Z",
+        "sha256": "b23452fabd5ec6b1c3feea6ffce7830f8fdaa74542dcb3c694786fb329663c0f",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "svalbard": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=15.830000&latitude=78.200000&format=JSON",
+        "retrieved": "2026-11-10T22:37:15Z",
+        "sha256": "146b71e59ca40ea7e1a2bbb2d2e336750fb87a801276d35a69661d1ea6f7746c",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "mcmurdo": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=162.600000&latitude=-77.600000&format=JSON",
+        "retrieved": "2026-11-10T22:37:16Z",
+        "sha256": "4452bfe369aa2d35598da8a63bc6ef17e749997b1d70f93bc6c3a1a67656079a",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "riotinto": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=-6.550000&latitude=37.690000&format=JSON",
+        "retrieved": "2026-11-10T22:37:18Z",
+        "sha256": "7e4dd28122c7f194b8062e30532dc46ed2cf8dd991ee5b5443073213df435687",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "hawaii": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=-155.280000&latitude=19.420000&format=JSON",
+        "retrieved": "2026-11-10T22:37:19Z",
+        "sha256": "82d69232f0b59840d40917970629aeece8d5bf41b5e0882cd995e789686b60c3",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    },
+    "mauna_ulu_window": {
+      "status": "ok",
+      "provenance": {
+        "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=TS%2CT2M%2CT2M_MAX%2CT2M_MIN%2CPS%2CALLSKY_SFC_SW_DWN%2CWS2M%2CPRECTOTCORR%2CRH2M%2CAOD_55&community=RE&longitude=-155.200078&latitude=19.359699&format=JSON",
+        "retrieved": "2026-11-10T22:37:21Z",
+        "sha256": "2963220f24d7030b5b5abbb562468c712249c5ca33fa338d76167de033aa128b",
+        "cached": true,
+        "dataset": "NASA POWER climatology (MERRA-2), community RE, 2001–2020 normals",
+        "parameters": [
+          "TS",
+          "T2M",
+          "T2M_MAX",
+          "T2M_MIN",
+          "PS",
+          "ALLSKY_SFC_SW_DWN",
+          "WS2M",
+          "PRECTOTCORR",
+          "RH2M",
+          "AOD_55"
+        ],
+        "note": "TS is skin temperature used as a surface-temperature proxy; monthly means smooth extremes."
+      },
+      "units": {
+        "TS": "C",
+        "PS": "kPa",
+        "ALLSKY_SFC_SW_DWN": "kWh/m^2/day",
+        "AOD_55": "dimensionless",
+        "PRECTOTCORR": "mm/day"
+      }
+    }
+  },
+  "layer_sources": {
+    "earth_terrain": "AWS Terrain Tiles / Terrarium (public, keyless) — SRTM/3DEP/ASTER/ETOPO1 composite",
+    "earth_climate": "NASA POWER climatology (MERRA-2), community RE",
+    "earth_lst": "Not acquired: AppEEARS MOD11A1 task is implemented but was not submitted. POWER TS is used as a proxy.",
+    "earth_ice_mineral_rock_cave_access": "Not acquired in this build; listed as named gaps.",
+    "lunar_thermal": "Diviner published values used for target envelopes; global raster download deferred by size budget.",
+    "mars_target": "MOLA/published context; analyst-set screening envelope."
+  },
+  "not_evidence": [
+    "No Earth site is an exact or equal match to the Moon or Mars.",
+    "No result here is an astronaut-safety or operational recommendation.",
+    "Terrain metrics describe a 2 × 2 km window at the sampled grid, not wheel-scale rocks or traversability."
+  ]
+}

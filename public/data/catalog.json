@@ -1,0 +1,1139 @@
+{
+  "schemaVersion": "0.3-p3",
+  "productionReady": false,
+  "note": "Catalog state for P3. Every comparison value is null: no observations, method or study areas exist yet. Geometry is null; release builds mark no locations. QA builds add test-fixture positions that are not catalog evidence.",
+  "target": {
+    "id": "moon_south_pole_ridge",
+    "name": "Moon South-Pole Ridge",
+    "status": "parameter template; parameters and sources pending",
+    "comparison": {
+      "file": "data/comparisons/connecting-ridge_mauna-ulu.bounded-terrain-1.0.json",
+      "sha256": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+      "schemaVersion": "1.0-bounded-comparison",
+      "methodVersion": "bounded-terrain-1.0",
+      "status": "provisional_computed_terrain_evidence",
+      "productionReady": false,
+      "syncedFrom": "data-prep/codex-first-comparison/frontend/comparison.json"
+    },
+    "studyArea": {
+      "studyId": "connecting-ridge-window",
+      "label": "Connecting Ridge, bounded 2 x 2 km window",
+      "boundsXY": [
+        -12000,
+        -13000,
+        -10000,
+        -11000
+      ],
+      "crsId": "MOON_ME_DE421_south_polar_stereographic",
+      "note": "Lunar polar stereographic (MOON_ME / DE421). Not plotted on the Earth basemap."
+    }
+  },
+  "purpose": {
+    "id": "rover_mobility",
+    "name": "Rover Mobility",
+    "emphasisFromBrief": [
+      "slope",
+      "roughness"
+    ],
+    "methodStatus": "not_configured",
+    "comparison": {
+      "file": "data/comparisons/connecting-ridge_mauna-ulu.bounded-terrain-1.0.json",
+      "methodVersion": "bounded-terrain-1.0"
+    }
+  },
+  "conditions": [
+    {
+      "id": "elevation_topography",
+      "label": "Elevation & topography"
+    },
+    {
+      "id": "slope",
+      "label": "Slope"
+    },
+    {
+      "id": "roughness",
+      "label": "Roughness"
+    },
+    {
+      "id": "temperature_extremes",
+      "label": "Temperature extremes"
+    },
+    {
+      "id": "illumination_low_sun",
+      "label": "Illumination & low Sun"
+    },
+    {
+      "id": "pressure",
+      "label": "Atmospheric pressure"
+    },
+    {
+      "id": "ice_snow_moisture",
+      "label": "Ice, snow & moisture"
+    },
+    {
+      "id": "geology_minerals",
+      "label": "Geology & minerals"
+    },
+    {
+      "id": "dust_wind",
+      "label": "Dust & wind"
+    },
+    {
+      "id": "craters_rocks",
+      "label": "Craters & rocks"
+    },
+    {
+      "id": "caves_lava_tubes",
+      "label": "Caves & lava tubes"
+    },
+    {
+      "id": "access_hazards",
+      "label": "Access & hazards"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "atacama",
+      "name": "Atacama",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "atacama-window",
+        "label": "2 × 2 km screening window, Atacama Desert",
+        "boundsXY": [
+          -67.989823,
+          -23.869044,
+          -67.970177,
+          -23.850956
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            -67.989823,
+            -23.869044
+          ],
+          [
+            -67.970177,
+            -23.869044
+          ],
+          [
+            -67.970177,
+            -23.850956
+          ],
+          [
+            -67.989823,
+            -23.850956
+          ],
+          [
+            -67.989823,
+            -23.869044
+          ]
+        ],
+        "centreWGS84": [
+          -67.98,
+          -23.86
+        ],
+        "selection": "Hyper-arid desert window; catalog region has no official study boundary. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 49.95,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "Chile · Atacama (Hyper-arid desert window; catalog region has no official study boundary.)",
+      "conditions": {
+        "elevation_topography": 364.8,
+        "slope": 9.87,
+        "roughness": 0.441,
+        "temperature_extremes": [
+          2.86,
+          17.05
+        ],
+        "illumination_low_sun": 307.22,
+        "pressure": 67.86,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.07,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Photograph",
+        "alt": "A rover and its wheel tracks crossing a stony desert plain in Chile.",
+        "credit": "NASA/CampoAlto/Victor Robles",
+        "role": "Context photograph, Atacama, Chile. Not a measured mobility comparison.",
+        "original": "assets-src/regions/atacama-tracks.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/atacama/letter-800.webp",
+              "w": 800,
+              "h": 267
+            },
+            {
+              "src": "img/regions/atacama/letter-1600.webp",
+              "w": 1000,
+              "h": 333
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/atacama/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/atacama/inspector-940.webp",
+                "w": 940,
+                "h": 500
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/atacama/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/atacama/inspector-940.avif",
+                "w": 940,
+                "h": 500
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/atacama/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/atacama/mobile-960.webp",
+                "w": 960,
+                "h": 480
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/atacama/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/atacama/mobile-960.avif",
+                "w": 960,
+                "h": 480
+              }
+            ]
+          }
+        },
+        "sourcePage": "https://www.nasa.gov/image-article/tire-tracks-mars-atacama-rover-astrobiology-drilling-studies/"
+      }
+    },
+    {
+      "id": "haughton",
+      "name": "Haughton Crater region",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "haughton-window",
+        "label": "2 × 2 km screening window, Haughton Crater",
+        "boundsXY": [
+          -75.43559,
+          75.370956,
+          -75.36441,
+          75.389044
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            -75.43559,
+            75.370956
+          ],
+          [
+            -75.36441,
+            75.370956
+          ],
+          [
+            -75.36441,
+            75.389044
+          ],
+          [
+            -75.43559,
+            75.389044
+          ],
+          [
+            -75.43559,
+            75.370956
+          ]
+        ],
+        "centreWGS84": [
+          -75.4,
+          75.38
+        ],
+        "selection": "Polar desert impact structure; regional catalog entry. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 10.33,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "Canada · Devon Island, Nunavut (Polar desert impact structure; regional catalog entry.)",
+      "conditions": {
+        "elevation_topography": 7.2,
+        "slope": 0.18,
+        "roughness": 0.008,
+        "temperature_extremes": [
+          -20.43,
+          3.84
+        ],
+        "illumination_low_sun": 88.42,
+        "pressure": 101.12,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.06,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Satellite scene",
+        "alt": "Satellite view of snow-streaked brown highlands and sea ice on Devon Island.",
+        "credit": "NASA/GSFC/LaRC/JPL, MISR Team (Terra, 28 June 2001; PIA03714)",
+        "role": "Satellite context, Devon Island, Nunavut. Regional view; not a study boundary.",
+        "original": "assets-src/regions/devon-island.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/haughton/letter-800.webp",
+              "w": 800,
+              "h": 267
+            },
+            {
+              "src": "img/regions/haughton/letter-1600.webp",
+              "w": 1214,
+              "h": 405
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/haughton/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/haughton/inspector-940.webp",
+                "w": 940,
+                "h": 500
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/haughton/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/haughton/inspector-940.avif",
+                "w": 940,
+                "h": 500
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/haughton/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/haughton/mobile-960.webp",
+                "w": 960,
+                "h": 480
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/haughton/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/haughton/mobile-960.avif",
+                "w": 960,
+                "h": 480
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "svalbard",
+      "name": "Svalbard",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "svalbard-window",
+        "label": "2 × 2 km screening window, Adventdalen",
+        "boundsXY": [
+          15.786072,
+          78.190956,
+          15.873928,
+          78.209044
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            15.786072,
+            78.190956
+          ],
+          [
+            15.873928,
+            78.190956
+          ],
+          [
+            15.873928,
+            78.209044
+          ],
+          [
+            15.786072,
+            78.209044
+          ],
+          [
+            15.786072,
+            78.190956
+          ]
+        ],
+        "centreWGS84": [
+          15.83,
+          78.2
+        ],
+        "selection": "High-Arctic valley floor; regional catalog entry. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 28.16,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "Norway · Svalbard (High-Arctic valley floor; regional catalog entry.)",
+      "conditions": {
+        "elevation_topography": 174.1,
+        "slope": 2.77,
+        "roughness": 0.181,
+        "temperature_extremes": [
+          -14.85,
+          4.11
+        ],
+        "illumination_low_sun": 85.78,
+        "pressure": 97.55,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.05,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Satellite scene",
+        "alt": "Satellite view of Svalbard glaciers, bare ground and meltwater-coloured fjords.",
+        "credit": "NASA Earth Observatory image by Joshua Stevens, using Landsat 9 data from the USGS (29 July 2022)",
+        "role": "Satellite context, Svalbard. Shows summer melt; not a study boundary.",
+        "original": "assets-src/regions/svalbard.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/svalbard/letter-800.webp",
+              "w": 800,
+              "h": 267
+            },
+            {
+              "src": "img/regions/svalbard/letter-1600.webp",
+              "w": 1600,
+              "h": 533
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/svalbard/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/svalbard/inspector-940.webp",
+                "w": 940,
+                "h": 500
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/svalbard/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/svalbard/inspector-940.avif",
+                "w": 940,
+                "h": 500
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/svalbard/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/svalbard/mobile-960.webp",
+                "w": 960,
+                "h": 480
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/svalbard/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/svalbard/mobile-960.avif",
+                "w": 960,
+                "h": 480
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mcmurdo",
+      "name": "McMurdo Dry Valleys",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "mcmurdo-window",
+        "label": "2 × 2 km screening window, Wright Valley",
+        "boundsXY": [
+          162.558167,
+          -77.609044,
+          162.641833,
+          -77.590956
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            162.558167,
+            -77.609044
+          ],
+          [
+            162.641833,
+            -77.609044
+          ],
+          [
+            162.641833,
+            -77.590956
+          ],
+          [
+            162.558167,
+            -77.590956
+          ],
+          [
+            162.558167,
+            -77.609044
+          ]
+        ],
+        "centreWGS84": [
+          162.6,
+          -77.6
+        ],
+        "selection": "Cold desert valley; regional catalog entry. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 48.17,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "Antarctica · Wright Valley (Cold desert valley; regional catalog entry.)",
+      "conditions": {
+        "elevation_topography": 273.4,
+        "slope": 7.28,
+        "roughness": 0.317,
+        "temperature_extremes": [
+          -36.38,
+          -11.9
+        ],
+        "illumination_low_sun": 124.97,
+        "pressure": 88.43,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.0,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Satellite scene",
+        "alt": "Satellite view of ice-free brown valleys between glaciers in Antarctica.",
+        "credit": "NASA/GSFC/METI/ERSDAC/JAROS and U.S./Japan ASTER Science Team (Terra, 8 Dec 2002; PIA12461)",
+        "role": "Satellite context, Wright and Victoria valleys. Not a study boundary.",
+        "original": "assets-src/regions/dry-valleys.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/mcmurdo/letter-800.webp",
+              "w": 800,
+              "h": 267
+            },
+            {
+              "src": "img/regions/mcmurdo/letter-1600.webp",
+              "w": 1600,
+              "h": 533
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/mcmurdo/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/mcmurdo/inspector-940.webp",
+                "w": 940,
+                "h": 500
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/mcmurdo/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/mcmurdo/inspector-940.avif",
+                "w": 940,
+                "h": 500
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/mcmurdo/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/mcmurdo/mobile-960.webp",
+                "w": 960,
+                "h": 480
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/mcmurdo/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/mcmurdo/mobile-960.avif",
+                "w": 960,
+                "h": 480
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "riotinto",
+      "name": "Rio Tinto basin",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "riotinto-window",
+        "label": "2 × 2 km screening window, Rio Tinto",
+        "boundsXY": [
+          -6.561352,
+          37.680956,
+          -6.538648,
+          37.699044
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            -6.561352,
+            37.680956
+          ],
+          [
+            -6.538648,
+            37.680956
+          ],
+          [
+            -6.538648,
+            37.699044
+          ],
+          [
+            -6.561352,
+            37.699044
+          ],
+          [
+            -6.561352,
+            37.680956
+          ]
+        ],
+        "centreWGS84": [
+          -6.55,
+          37.69
+        ],
+        "selection": "Acid-mine drainage terrain; regional catalog entry. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 56.54,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "Spain · Huelva (Acid-mine drainage terrain; regional catalog entry.)",
+      "conditions": {
+        "elevation_topography": 139.9,
+        "slope": 7.83,
+        "roughness": 0.347,
+        "temperature_extremes": [
+          8.45,
+          31.12
+        ],
+        "illumination_low_sun": 209.13,
+        "pressure": 99.51,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.16,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Satellite scene",
+        "alt": "Satellite view of the red-stained Rio Tinto winding through green hills, with NASA place labels.",
+        "credit": "NASA Earth Observatory image by Joshua Stevens, using Landsat 8 data from the USGS (2 Feb 2020)",
+        "role": "Satellite context, Rio Tinto basin, Spain. Place labels are NASA’s; not a study boundary.",
+        "original": "assets-src/regions/rio-tinto.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/riotinto/letter-800.webp",
+              "w": 720,
+              "h": 240
+            },
+            {
+              "src": "img/regions/riotinto/letter-1600.webp",
+              "w": 720,
+              "h": 240
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/riotinto/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/riotinto/inspector-940.webp",
+                "w": 720,
+                "h": 383
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/riotinto/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/riotinto/inspector-940.avif",
+                "w": 720,
+                "h": 383
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/riotinto/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/riotinto/mobile-960.webp",
+                "w": 720,
+                "h": 360
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/riotinto/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/riotinto/mobile-960.avif",
+                "w": 720,
+                "h": 360
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "hawaii",
+      "name": "Hawaii volcanic terrain",
+      "status": "bounded_study_window",
+      "studyArea": {
+        "studyId": "hawaii-window",
+        "label": "2 × 2 km screening window, Kīlauea summit area",
+        "boundsXY": [
+          -155.289525,
+          19.410956,
+          -155.270475,
+          19.429044
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            -155.289525,
+            19.410956
+          ],
+          [
+            -155.270475,
+            19.410956
+          ],
+          [
+            -155.270475,
+            19.429044
+          ],
+          [
+            -155.289525,
+            19.429044
+          ],
+          [
+            -155.289525,
+            19.410956
+          ]
+        ],
+        "centreWGS84": [
+          -155.28,
+          19.42
+        ],
+        "selection": "Basaltic volcanic terrain; regional catalog entry. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "geometry": null,
+      "fit": 40.26,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "USA (Hawaiʻi) · Kīlauea (Basaltic volcanic terrain; regional catalog entry.)",
+      "conditions": {
+        "elevation_topography": 185.9,
+        "slope": 4.7,
+        "roughness": 0.271,
+        "temperature_extremes": [
+          20.88,
+          23.81
+        ],
+        "illumination_low_sun": 220.0,
+        "pressure": 96.38,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.1,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": {
+        "kind": "Photograph",
+        "alt": "Researchers walking across a rough lava field in Hawaii.",
+        "credit": "NASA",
+        "role": "Context photograph, Hawaii field research. Not a mapped cave or chosen study area.",
+        "original": "assets-src/regions/hawaii-basalt.jpg",
+        "variants": {
+          "letter": [
+            {
+              "src": "img/regions/hawaii/letter-800.webp",
+              "w": 800,
+              "h": 267
+            },
+            {
+              "src": "img/regions/hawaii/letter-1600.webp",
+              "w": 1000,
+              "h": 333
+            }
+          ],
+          "inspector": {
+            "webp": [
+              {
+                "src": "img/regions/hawaii/inspector-470.webp",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/hawaii/inspector-940.webp",
+                "w": 940,
+                "h": 500
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/hawaii/inspector-470.avif",
+                "w": 470,
+                "h": 250
+              },
+              {
+                "src": "img/regions/hawaii/inspector-940.avif",
+                "w": 940,
+                "h": 500
+              }
+            ]
+          },
+          "mobile": {
+            "webp": [
+              {
+                "src": "img/regions/hawaii/mobile-480.webp",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/hawaii/mobile-960.webp",
+                "w": 960,
+                "h": 480
+              }
+            ],
+            "avif": [
+              {
+                "src": "img/regions/hawaii/mobile-480.avif",
+                "w": 480,
+                "h": 240
+              },
+              {
+                "src": "img/regions/hawaii/mobile-960.avif",
+                "w": 960,
+                "h": 480
+              }
+            ]
+          }
+        },
+        "sourcePage": "https://www.nasa.gov/missions/analog-field-testing/what-is-basalt/"
+      }
+    },
+    {
+      "id": "mauna_ulu_window",
+      "name": "Mauna Ulu area, Hawaiʻi",
+      "status": "bounded_study_window",
+      "parentRegionId": "hawaii",
+      "studyArea": {
+        "studyId": "mauna_ulu_window-window",
+        "label": "2 × 2 km bounded study window, Mauna Ulu",
+        "boundsXY": [
+          -155.209599,
+          19.350655,
+          -155.190557,
+          19.368743
+        ],
+        "crsId": "EPSG:4326",
+        "ringWGS84": [
+          [
+            -155.209599,
+            19.350655
+          ],
+          [
+            -155.190557,
+            19.350655
+          ],
+          [
+            -155.190557,
+            19.368743
+          ],
+          [
+            -155.209599,
+            19.368743
+          ],
+          [
+            -155.209599,
+            19.350655
+          ]
+        ],
+        "centreWGS84": [
+          -155.200078,
+          19.359699
+        ],
+        "selection": "Catalog's existing bounded study window, re-used here for continuity. Analyst-defined 2 × 2 km sample; not an official boundary or land-access claim."
+      },
+      "comparison": {
+        "file": "data/comparisons/connecting-ridge_mauna-ulu.bounded-terrain-1.0.json",
+        "studyId": "mauna-ulu-window"
+      },
+      "geometry": null,
+      "fit": 32.22,
+      "completeness": 58.3,
+      "purposeStatus": "screened",
+      "accessAndPermits": "USA (Hawaiʻi) · Mauna Ulu (Catalog's existing bounded study window, re-used here for continuity.)",
+      "conditions": {
+        "elevation_topography": 172.3,
+        "slope": 4.37,
+        "roughness": 0.199,
+        "temperature_extremes": [
+          20.88,
+          23.81
+        ],
+        "illumination_low_sun": 220.0,
+        "pressure": 96.38,
+        "ice_snow_moisture": null,
+        "geology_minerals": null,
+        "dust_wind": 0.1,
+        "craters_rocks": null,
+        "caves_lava_tubes": null,
+        "access_hazards": null
+      },
+      "image": null,
+      "note": "Terrain evidence for this window lives in the comparison file, not in this record; it does not describe the whole Hawaii region."
+    }
+  ],
+  "copy": {
+    "heading": "Explore analog catalog",
+    "helper": "Compare documented Earth candidates for a specific test.",
+    "listNote": "Catalog order, not a ranking. All seven windows are analyst-defined 2 × 2 km samples; screening evidence is shown in the inspector and detail pages.",
+    "candidateNote": "Bounded 2 × 2 km screening window · computed evidence available",
+    "subtitle": "Candidate region — study area not defined",
+    "fields": [
+      [
+        "Fit",
+        "Unknown"
+      ],
+      [
+        "Comparable conditions",
+        "Not yet assessed"
+      ],
+      [
+        "Purpose status",
+        "Unknown"
+      ],
+      [
+        "Access and permits",
+        "Not checked"
+      ]
+    ],
+    "conditionValue": "Evidence pending",
+    "conditionNote": "Evidence pending — comparable observations and method not yet prepared.",
+    "profile": "Profile unavailable — paired, source-backed transects have not been prepared.",
+    "map": "Study boundaries and marker positions pending verification.",
+    "registryLabel": "Data Registry & AI-use record",
+    "registryCopy": "Context images available; analytical observations pending.",
+    "gap": "Terrain resemblance alone does not reproduce the lunar environment. Gravity, vacuum and radiation remain limitations.",
+    "disclaimer": "ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.",
+    "nav": [
+      "Target & Purpose",
+      "Match Map",
+      "Site Detail",
+      "Portfolio & Gaps",
+      "Twin Viewer"
+    ],
+    "mapRelease": "All seven windows are plotted as 2 × 2 km screening footprints. The basemap is coarse context only.",
+    "mapQa": "QA build: diamonds are approximate test positions, not evidence.",
+    "targetArea": "Study window: Connecting Ridge, 2 × 2 km (lunar polar stereographic)",
+    "hawaiiWindowNote": "A bounded 2 × 2 km window inside this region, the Mauna Ulu area, has computed terrain evidence. Its values describe that window only, not the whole region.",
+    "windowNote": "Bounded study window · computed terrain evidence",
+    "weightingNote": "Emphasis only decides which conditions are shown first. No weights or scoring method are set, so no site is ranked and Fit stays \"Not set\".",
+    "startHeading": "Find Earth places to rehearse for the Moon and Mars",
+    "startIntro": "Choose the environment you are preparing for and what you need to test. ArtemisTwin lists documented Earth candidates for that pairing and shows what evidence exists for it, and what is still unknown."
+  },
+  "targets": [
+    {
+      "id": "moon_south_pole_ridge",
+      "label": "Moon South-Pole Ridge",
+      "body": "Moon",
+      "status": "bound_for_first_comparison",
+      "summary": "High, sunlit ridge terrain near the lunar south pole.",
+      "binding": "For the first comparison it is bound to a 2 × 2 km window on Connecting Ridge (LOLA 5 m elevation, Barker et al. 2021).",
+      "studyArea": {
+        "studyId": "connecting-ridge-window",
+        "label": "Connecting Ridge, bounded 2 x 2 km window",
+        "boundsXY": [
+          -12000,
+          -13000,
+          -10000,
+          -11000
+        ],
+        "crsId": "MOON_ME_DE421_south_polar_stereographic",
+        "note": "Lunar polar stereographic (MOON_ME / DE421). Not plotted on the Earth basemap."
+      },
+      "comparison": {
+        "file": "data/comparisons/connecting-ridge_mauna-ulu.bounded-terrain-1.0.json",
+        "sha256": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+        "schemaVersion": "1.0-bounded-comparison",
+        "methodVersion": "bounded-terrain-1.0",
+        "status": "provisional_computed_terrain_evidence",
+        "productionReady": false,
+        "syncedFrom": "data-prep/codex-first-comparison/frontend/comparison.json"
+      }
+    },
+    {
+      "id": "moon_lava_tube_region",
+      "label": "Moon Lava-Tube Region",
+      "body": "Moon",
+      "status": "parameter_template",
+      "summary": "Lunar pits and possible lava tubes.",
+      "binding": "Parameter template only: no representative region or sources are prepared yet."
+    },
+    {
+      "id": "mars_ice_plain",
+      "label": "Mars Ice Plain",
+      "body": "Mars",
+      "status": "parameter_template",
+      "summary": "Mid-latitude Martian plains with buried ice.",
+      "binding": "Parameter template only: no representative region or sources are prepared yet."
+    }
+  ],
+  "purposes": [
+    {
+      "id": "rover_mobility",
+      "label": "Rover Mobility",
+      "emphasis": [
+        "slope",
+        "roughness"
+      ],
+      "question": "Can a wheeled rover climb and cross this kind of terrain?",
+      "comparison": {
+        "file": "data/comparisons/connecting-ridge_mauna-ulu.bounded-terrain-1.0.json",
+        "targetId": "moon_south_pole_ridge"
+      }
+    },
+    {
+      "id": "ice_detection",
+      "label": "Ice Detection",
+      "emphasis": [
+        "temperature_extremes",
+        "ice_snow_moisture"
+      ],
+      "question": "Can instruments that look for ice be tested in comparable cold and frozen ground?"
+    },
+    {
+      "id": "cave_robotics",
+      "label": "Cave Robotics",
+      "emphasis": [
+        "caves_lava_tubes",
+        "geology_minerals"
+      ],
+      "question": "Are there caves or lava tubes with comparable rock for robots to explore?"
+    },
+    {
+      "id": "habitat_thermal_test",
+      "label": "Habitat Thermal Test",
+      "emphasis": [
+        "temperature_extremes"
+      ],
+      "question": "Do temperatures swing far enough to test habitat insulation and heating?"
+    }
+  ],
+  "screeningWiring": {
+    "generated": "2026-11-11T08:45:32Z",
+    "source": "sites.json",
+    "note": "studyArea and candidate status are derived from the ETL window definitions; Fit remains a separate screening model."
+  }
+}

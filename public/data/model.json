@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "method_version": "screening-fit-1.0",
+  "title": "ArtemisTwin provisional analog screening model",
+  "score_label": "Analog Fit (screening model)",
+  "monte_carlo_draws": 4000,
+  "monte_carlo_seed": 20261111,
+  "earth_noise_fraction": 0.1,
+  "target_noise_fraction": 0.1,
+  "weight_noise_fraction": 0.1,
+  "proxy_weight_multiplier": 0.5,
+  "notes": [
+    "Analog Fit is a weighted similarity between documented Earth measurements and a declared target envelope, 0–100.",
+    "It is not a match, a safety rating, an operational ranking, or evidence that a site can substitute for the Moon or Mars.",
+    "Absolute elevation is not compared across bodies; L1 uses local relief inside the same footprint.",
+    "Pressure is excluded from the fit for Moon and Mars targets because Earth surface sites cannot reproduce it.",
+    "Layers marked proxy receive half weight. Missing layers are never imputed as zero; they lower Data Completeness.",
+    "The uncertainty band propagates measurement, envelope and weight uncertainty only. It does not cover unmeasured conditions; a separate missing-data sensitivity range is reported."
+  ],
+  "generated": "2026-11-13T07:10:28Z",
+  "layer_registry": [
+    {
+      "layer_id": "L1",
+      "layer_key": "L1_elevation",
+      "layer_name": "Relief & elevation",
+      "planetary_source": "LRO LOLA / MGS MOLA",
+      "earth_source": "AWS Terrain Tiles (Terrarium) composite",
+      "unit": "m",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Local relief (max − min) inside the 2 × 2 km footprint; absolute elevation kept as context only."
+    },
+    {
+      "layer_id": "L2",
+      "layer_key": "L2_slope",
+      "layer_name": "Slope",
+      "planetary_source": "Derived LOLA / MOLA",
+      "earth_source": "Derived from Terrarium DEM (Horn 3×3)",
+      "unit": "degrees",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Mean slope over the footprint at the sampled grid."
+    },
+    {
+      "layer_id": "L3",
+      "layer_key": "L3_roughness",
+      "layer_name": "Roughness (TRI)",
+      "planetary_source": "Derived LOLA / MOLA",
+      "earth_source": "Derived from Terrarium DEM (Riley 1999)",
+      "unit": "index",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Terrain Ruggedness Index, dimensionless (metres of neighbour difference per cell metre)."
+    },
+    {
+      "layer_id": "L4_max",
+      "layer_key": "L4_temperature_max",
+      "layer_name": "Surface temperature, warm month",
+      "planetary_source": "LRO Diviner / THEMIS",
+      "earth_source": "NASA POWER Earth skin temperature (TS) climatology",
+      "unit": "Celsius",
+      "category": "Thermal",
+      "comparability": "proxy",
+      "basis": "Warmest monthly climatological skin temperature. Air temperature is not surface temperature; flagged as a proxy."
+    },
+    {
+      "layer_id": "L4_min",
+      "layer_key": "L4_temperature_min",
+      "layer_name": "Surface temperature, cold month",
+      "planetary_source": "LRO Diviner / THEMIS",
+      "earth_source": "NASA POWER Earth skin temperature (TS) climatology",
+      "unit": "Celsius",
+      "category": "Thermal",
+      "comparability": "proxy",
+      "basis": "Coldest monthly climatological skin temperature; proxy for surface radiant temperature."
+    },
+    {
+      "layer_id": "L5",
+      "layer_key": "L5_solar_illumination",
+      "layer_name": "Solar irradiance",
+      "planetary_source": "NASA SPICE / Diviner illumination models",
+      "earth_source": "NASA POWER ALLSKY_SFC_SW_DWN climatology",
+      "unit": "W/m^2",
+      "category": "Illumination",
+      "comparability": "proxy",
+      "basis": "Annual mean all-sky shortwave downward irradiance, converted from kWh/m²/day."
+    },
+    {
+      "layer_id": "L6",
+      "layer_key": "L6_surface_pressure",
+      "layer_name": "Surface pressure",
+      "planetary_source": "Vacuum / Viking / MSL",
+      "earth_source": "NASA POWER PS climatology",
+      "unit": "kPa",
+      "category": "Atmospheric",
+      "comparability": "excluded",
+      "basis": "Reported for context. Excluded from the fit because no Earth surface site reproduces a lunar vacuum or the ~0.6 kPa Martian atmosphere."
+    },
+    {
+      "layer_id": "L7",
+      "layer_key": "L7_ice_volatiles",
+      "layer_name": "Ice & volatiles",
+      "planetary_source": "LEND / SHARAD / MRO",
+      "earth_source": "Not acquired (SMAP / MODIS snow not wired in this build)",
+      "unit": "VWE %",
+      "category": "Volatiles",
+      "comparability": "proxy",
+      "basis": "Water-equivalent percentage. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L8",
+      "layer_key": "L8_mineralogy",
+      "layer_name": "Mineralogy index",
+      "planetary_source": "M3 / CRISM",
+      "earth_source": "Not acquired (EMIT / ASTER not wired in this build)",
+      "unit": "index",
+      "category": "Geology",
+      "comparability": "proxy",
+      "basis": "Normalised spectral index. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L9",
+      "layer_key": "L9_dust_hazard",
+      "layer_name": "Dust & wind hazard",
+      "planetary_source": "PDS dust opacity / MERRA-2",
+      "earth_source": "NASA POWER AOD_55 climatology",
+      "unit": "index",
+      "category": "Atmospheric",
+      "comparability": "proxy",
+      "basis": "Aerosol optical depth at 550 nm mapped to 0–1 by min(1, AOD/0.8). A haze proxy, not a regolith-abrasion measurement."
+    },
+    {
+      "layer_id": "L10",
+      "layer_key": "L10_rock_abundance",
+      "layer_name": "Rock abundance",
+      "planetary_source": "LROC / HiRISE",
+      "earth_source": "Not acquired (needs field survey or high-resolution imagery)",
+      "unit": "% coverage",
+      "category": "Hazards",
+      "comparability": "proxy",
+      "basis": "Percent rock cover. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L11",
+      "layer_key": "L11_cave_proximity",
+      "layer_name": "Cave proximity",
+      "planetary_source": "LROC pits / GRAIL",
+      "earth_source": "Not acquired (OSM cave entrances not queried)",
+      "unit": "km",
+      "category": "Subterranean",
+      "comparability": "proxy",
+      "basis": "Distance to nearest documented cave or lava-tube entrance. No Earth value in this build."
+    },
+    {
+      "layer_id": "L12",
+      "layer_key": "L12_access",
+      "layer_name": "Access & operational gates",
+      "planetary_source": "N/A",
+      "earth_source": "Not acquired (WDPA / OSM not queried)",
+      "unit": "km to road",
+      "category": "Logistics",
+      "comparability": "context",
+      "basis": "Context column only; weight 0 in every purpose so logistics never moves the fit score."
+    }
+  ],
+  "purposes": [
+    {
+      "purpose_id": "rover_mobility",
+      "purpose_name": "Rover Mobility",
+      "question": "Can a wheeled rover climb and cross this kind of terrain?",
+      "emphasis": [
+        "slope",
+        "roughness"
+      ],
+      "weights": {
+        "L1_elevation": 0.5,
+        "L2_slope": 2.5,
+        "L3_roughness": 2.5,
+        "L4_temperature_max": 1.0,
+        "L4_temperature_min": 1.0,
+        "L5_solar_illumination": 0.5,
+        "L6_surface_pressure": 0.2,
+        "L7_ice_volatiles": 0.2,
+        "L8_mineralogy": 1.0,
+        "L9_dust_hazard": 1.5,
+        "L10_rock_abundance": 2.5,
+        "L11_cave_proximity": 0.2,
+        "L12_access": 0.0
+      }
+    },
+    {
+      "purpose_id": "ice_detection",
+      "purpose_name": "Ice Detection",
+      "question": "Can instruments that look for ice be tested in comparable cold and frozen ground?",
+      "emphasis": [
+        "temperature_extremes",
+        "ice_snow_moisture"
+      ],
+      "weights": {
+        "L1_elevation": 0.5,
+        "L2_slope": 1.0,
+        "L3_roughness": 1.0,
+        "L4_temperature_max": 2.0,
+        "L4_temperature_min": 2.5,
+        "L5_solar_illumination": 1.5,
+        "L6_surface_pressure": 0.5,
+        "L7_ice_volatiles": 3.0,
+        "L8_mineralogy": 2.0,
+        "L9_dust_hazard": 0.5,
+        "L10_rock_abundance": 0.5,
+        "L11_cave_proximity": 0.5,
+        "L12_access": 0.0
+      }
+    },
+    {
+      "purpose_id": "habitat_thermal_test",
+      "purpose_name": "Habitat Thermal Test",
+      "question": "Do temperatures swing far enough to test habitat insulation and heating?",
+      "emphasis": [
+        "temperature_extremes"
+      ],
+      "weights": {
+        "L1_elevation": 0.5,
+        "L2_slope": 1.0,
+        "L3_roughness": 1.0,
+        "L4_temperature_max": 3.0,
+        "L4_temperature_min": 3.0,
+        "L5_solar_illumination": 2.5,
+        "L6_surface_pressure": 1.0,
+        "L7_ice_volatiles": 1.0,
+        "L8_mineralogy": 0.5,
+        "L9_dust_hazard": 1.5,
+        "L10_rock_abundance": 0.5,
+        "L11_cave_proximity": 1.5,
+        "L12_access": 0.0
+      }
+    },
+    {
+      "purpose_id": "cave_robotics",
+      "purpose_name": "Cave Robotics",
+      "question": "Are there caves or lava tubes with comparable rock for robots to explore?",
+      "emphasis": [
+        "caves_lava_tubes",
+        "geology_minerals"
+      ],
+      "weights": {
+        "L1_elevation": 0.5,
+        "L2_slope": 1.5,
+        "L3_roughness": 2.0,
+        "L4_temperature_max": 0.5,
+        "L4_temperature_min": 0.5,
+        "L5_solar_illumination": 0.2,
+        "L6_surface_pressure": 0.2,
+        "L7_ice_volatiles": 1.0,
+        "L8_mineralogy": 2.0,
+        "L9_dust_hazard": 0.5,
+        "L10_rock_abundance": 2.0,
+        "L11_cave_proximity": 3.0,
+        "L12_access": 0.5
+      }
+    }
+  ],
+  "earth_limits": [
+    {
+      "id": "gravity",
+      "label": "Gravity",
+      "earth": "9.81 m/s²",
+      "moon": "1.62 m/s²",
+      "mars": "3.72 m/s²",
+      "why_it_matters": "Loads, traction, dust settling and rover dynamics differ. No Earth surface site changes this."
+    },
+    {
+      "id": "pressure",
+      "label": "Surface pressure / vacuum",
+      "earth": "~101 kPa at sea level",
+      "moon": "effectively 0 kPa",
+      "mars": "~0.6 kPa",
+      "why_it_matters": "Outgassing, convection, dust lifting and suit/rover sealing cannot be rehearsed in the open at an Earth site."
+    },
+    {
+      "id": "radiation",
+      "label": "Space radiation",
+      "earth": "Atmosphere and magnetosphere attenuate most of it",
+      "moon": "No atmosphere or global field",
+      "mars": "Thin atmosphere, no global field",
+      "why_it_matters": "Surface radiation exposure is not reproduced; use the NASA Space Radiation Laboratory or flight opportunities instead."
+    },
+    {
+      "id": "lighting",
+      "label": "True polar lighting",
+      "earth": "24 h day cycle and atmospheric scattering",
+      "moon": "Long shadows, low Sun, permanently shadowed regions",
+      "mars": "Dust-attenuated sunlight, different day length",
+      "why_it_matters": "Illumination geometry and shadow behaviour differ even when mean irradiance is similar."
+    },
+    {
+      "id": "regolith",
+      "label": "Regolith & dust",
+      "earth": "Weathering, water and biology change surface materials",
+      "moon": "Angular, electrostatically charged regolith",
+      "mars": "Fine dust with global storms",
+      "why_it_matters": "Abrasion, adhesion and dust-storm behaviour are not reproduced by Earth soils or desert dust."
+    }
+  ],
+  "target_ids": [
+    "moon_south_pole_ridge",
+    "moon_lava_tube_region",
+    "mars_ice_plain"
+  ],
+  "site_ids": [
+    "atacama",
+    "haughton",
+    "svalbard",
+    "mcmurdo",
+    "riotinto",
+    "hawaii",
+    "mauna_ulu_window"
+  ],
+  "site_columns": {
+    "L1_elevation": "L1_relief_m",
+    "L2_slope": "L2_slope_mean",
+    "L3_roughness": "L3_roughness_mean",
+    "L4_temperature_max": "L4_temp_max",
+    "L4_temperature_min": "L4_temp_min",
+    "L5_solar_illumination": "L5_solar_mean",
+    "L6_surface_pressure": "L6_pressure_mean",
+    "L7_ice_volatiles": "L7_ice_moisture_mean",
+    "L8_mineralogy": "L8_mineral_idx",
+    "L9_dust_hazard": "L9_dust_idx",
+    "L10_rock_abundance": "L10_rock_abundance",
+    "L11_cave_proximity": "L11_cave_dist_km",
+    "L12_access": "L12_access_road_km"
+  },
+  "formula": {
+    "layer_score": "s_i = max(0, 1 - min(1, |earth_i - target_i| / tolerance_i))",
+    "fit": "100 * Σ(effective_weight_i * s_i) / Σ(effective_weight_i), over available non-excluded layers",
+    "effective_weight": "purpose_weight * (0.5 if comparability=proxy else 1)",
+    "completeness": "100 * layers with an Earth value / 12",
+    "confidence_band": "10th–90th percentile of the Monte Carlo fit distribution"
+  },
+  "limits": [
+    "Fit depends on analyst-set target envelopes and purpose weights; a different envelope changes the score.",
+    "The band does not include unmeasured conditions; read the missing-data sensitivity separately.",
+    "60/100 is not a pass mark. There is no validated threshold for mission relevance."
+  ]
+}

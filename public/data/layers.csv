@@ -1,0 +1,14 @@
+layer_id,layer_key,layer_name,planetary_source,earth_source,unit,category,comparability,basis
+L1,L1_elevation,Relief & elevation,LRO LOLA / MGS MOLA,AWS Terrain Tiles (Terrarium) composite,m,Terrain,direct,Local relief (max − min) inside the 2 × 2 km footprint; absolute elevation kept as context only.
+L2,L2_slope,Slope,Derived LOLA / MOLA,Derived from Terrarium DEM (Horn 3×3),degrees,Terrain,direct,Mean slope over the footprint at the sampled grid.
+L3,L3_roughness,Roughness (TRI),Derived LOLA / MOLA,Derived from Terrarium DEM (Riley 1999),index,Terrain,direct,"Terrain Ruggedness Index, dimensionless (metres of neighbour difference per cell metre)."
+L4_max,L4_temperature_max,"Surface temperature, warm month",LRO Diviner / THEMIS,NASA POWER Earth skin temperature (TS) climatology,Celsius,Thermal,proxy,Warmest monthly climatological skin temperature. Air temperature is not surface temperature; flagged as a proxy.
+L4_min,L4_temperature_min,"Surface temperature, cold month",LRO Diviner / THEMIS,NASA POWER Earth skin temperature (TS) climatology,Celsius,Thermal,proxy,Coldest monthly climatological skin temperature; proxy for surface radiant temperature.
+L5,L5_solar_illumination,Solar irradiance,NASA SPICE / Diviner illumination models,NASA POWER ALLSKY_SFC_SW_DWN climatology,W/m^2,Illumination,proxy,"Annual mean all-sky shortwave downward irradiance, converted from kWh/m²/day."
+L6,L6_surface_pressure,Surface pressure,Vacuum / Viking / MSL,NASA POWER PS climatology,kPa,Atmospheric,excluded,Reported for context. Excluded from the fit because no Earth surface site reproduces a lunar vacuum or the ~0.6 kPa Martian atmosphere.
+L7,L7_ice_volatiles,Ice & volatiles,LEND / SHARAD / MRO,Not acquired (SMAP / MODIS snow not wired in this build),VWE %,Volatiles,proxy,Water-equivalent percentage. No Earth value in this build; shown as a named gap.
+L8,L8_mineralogy,Mineralogy index,M3 / CRISM,Not acquired (EMIT / ASTER not wired in this build),index,Geology,proxy,Normalised spectral index. No Earth value in this build; shown as a named gap.
+L9,L9_dust_hazard,Dust & wind hazard,PDS dust opacity / MERRA-2,NASA POWER AOD_55 climatology,index,Atmospheric,proxy,"Aerosol optical depth at 550 nm mapped to 0–1 by min(1, AOD/0.8). A haze proxy, not a regolith-abrasion measurement."
+L10,L10_rock_abundance,Rock abundance,LROC / HiRISE,Not acquired (needs field survey or high-resolution imagery),% coverage,Hazards,proxy,Percent rock cover. No Earth value in this build; shown as a named gap.
+L11,L11_cave_proximity,Cave proximity,LROC pits / GRAIL,Not acquired (OSM cave entrances not queried),km,Subterranean,proxy,Distance to nearest documented cave or lava-tube entrance. No Earth value in this build.
+L12,L12_access,Access & operational gates,N/A,Not acquired (WDPA / OSM not queried),km to road,Logistics,context,Context column only; weight 0 in every purpose so logistics never moves the fit score.

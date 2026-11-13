@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ready="instant" data-view="map" data-atf-ready="1"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon-BzuK_fR0.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/assets/favicon-32-DBDkr8A7.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-Ct9Boz3X.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#B9B7B0">
+<title>ArtemisTwin — Match Map</title>
+<meta name="description" content="ArtemisTwin: explore documented Earth analog candidates for a lunar or Martian test.">
+<noscript><style>#identity,#app{display:none!important}</style></noscript>
+  <script type="module" crossorigin="" src="/assets/main-vqEs0yEv.js"></script>
+  <script type="module" crossorigin="" src="/assets/analog-fit/analog-fit.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/main-CAYeBYYj.css">
+  <link rel="stylesheet" crossorigin="" href="/assets/analog-fit/analog-fit.css">
+<link rel="stylesheet" crossorigin="" href="http://127.0.0.1:8099/assets/maplibre-gl-qvkd0SPb.css"></head>
+<body>
+<noscript>
+  <div style="padding:32px;font:16px/1.5 system-ui,sans-serif;background:#B9B7B0;color:#141414;min-height:100vh">
+    <p style="display:flex;align-items:center;gap:14px;margin:0 0 16px"><img src="/assets/emblem-92-DieZSNMc.webp" width="96" height="92" alt=""><span><img src="/assets/wordmark-46-Bjx6U6v8.webp" width="369" height="46" alt="ArtemisTwin" style="max-width:60vw;height:auto;display:block"><img src="/assets/tagline-16-Di8291iu.webp" width="295" height="16" alt="Exploration &amp; Analogs" style="max-width:48vw;height:auto;display:block;margin-top:6px"></span></p>
+    <p>This catalog needs JavaScript to load its candidate list and map.</p>
+    <p><strong>ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</strong></p>
+  </div>
+</noscript>
+
+<div class="identity" id="identity" role="status" aria-live="polite">
+  <div class="op">
+    <p class="vh" id="idName">ArtemisTwin — Exploration &amp; Analogs</p>
+    <div class="lg lg-open" id="idLogo" aria-hidden="true">
+      <div class="lg-e"><img src="/assets/emblem-240-Zn9TeycG.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 480px) 52vw, 246px" width="421" height="402" alt="" fetchpriority="high"><span class="sweep" aria-hidden="true"></span></div>
+      <img class="lg-w" src="/assets/wordmark-36-C18Ey7Py.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 480px) 64vw, 300px" width="514" height="64" alt="">
+      <img class="lg-g" src="/assets/tagline-16-Di8291iu.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 480px) 51vw, 237px" width="406" height="22" alt="">
+      <p class="lg-text" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></p>
+    </div>
+    <span class="bar" id="idBar" aria-hidden="true" hidden=""></span>
+    <p class="msg" id="idMsg"></p>
+    <div class="act" id="idAct"></div>
+  </div>
+</div>
+<div class="app" id="app">
+  <div class="left">
+    <header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Screens"><a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Target &amp; Purpose</a><a href="#/map?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama" aria-current="page">Match Map</a><a href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility" title="Atacama">Site Detail</a><a href="#/portfolio?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Portfolio &amp; Gaps</a><a href="#/viewer?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Twin Viewer</a></nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Screens</button>
+    </header>
+    <div class="intro">
+      <div><h1 id="h1">Explore analog catalog</h1><p class="helper" id="helper">Compare documented Earth candidates for a specific test.</p></div>
+      <p class="tp"><span>Target<b id="target" data-ident="target">Moon South-Pole Ridge</b><small id="targetArea">Study window: Connecting Ridge, 2 × 2 km (lunar polar stereographic) · <a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Change target or purpose</a></small></span><span>Purpose<b id="purpose" data-ident="purpose">Rover Mobility</b></span></p>
+      <p class="list-note" id="listNote">Catalog order, not a ranking. Mauna Ulu area, Hawaiʻi has prepared terrain evidence for this pairing; the regions await study-area review.</p>
+    </div>
+    <ul class="names" id="names" aria-label="Earth candidates, catalog order"><li data-id="atacama"><button class="nm img-ok" type="button" data-id="atacama" aria-pressed="true" aria-expanded="true" aria-controls="insp" title="Atacama"><span class="t" data-ident="site:atacama" style="background-image: url(&quot;/img/regions/atacama/letter-800.webp&quot;);">Atacama</span><small>Selected. Awaiting study-area review</small></button><aside class="insp" id="insp" aria-label="Site inspector" aria-live="polite"><figure><div class="ph"><picture>
+          <source media="(max-width: 960px)" type="image/avif" srcset="/img/regions/atacama/mobile-480.avif 480w, /img/regions/atacama/mobile-960.avif 960w" sizes="100vw">
+          <source media="(max-width: 960px)" type="image/webp" srcset="/img/regions/atacama/mobile-480.webp 480w, /img/regions/atacama/mobile-960.webp 960w" sizes="100vw">
+          <source type="image/avif" srcset="/img/regions/atacama/inspector-470.avif 470w, /img/regions/atacama/inspector-940.avif 940w" sizes="470px">
+          <img src="/img/regions/atacama/inspector-470.webp" srcset="/img/regions/atacama/inspector-470.webp 470w, /img/regions/atacama/inspector-940.webp 940w" sizes="470px" width="470" height="250" alt="A rover and its wheel tracks crossing a stony desert plain in Chile." decoding="async">
+        </picture></div><figcaption>Context photograph, Atacama, Chile. Not a measured mobility comparison. Credit: NASA/CampoAlto/Victor Robles.</figcaption></figure>
+      <div class="ib"><h2>Atacama</h2><p class="sub">2 × 2 km screening window, Atacama Desert</p><div id="atf-insp-host" class="atf-insp-host" data-key="atacama|map|moon_south_pole_ridge|rover_mobility||">
+  <div class="atf-insp" data-atf-insp="">
+    <div class="atf-insp-top">
+      <p class="atf-kicker">Analog Fit</p>
+      <span class="atf-chip atf-chip-ok">Most weight measured</span>
+    </div>
+    <p class="atf-insp-score">
+      <b>50</b><span>/100 · likely 40–59</span>
+    </p>
+    <p class="atf-insp-meta">58% complete · 7 of 12 layers</p>
+    <p class="atf-insp-t">Moon South-Pole Ridge · Rover Mobility</p>
+    <p class="atf-insp-g">Gaps: Ice &amp; volatiles, Mineralogy index, Rock abundance +2</p>
+    <p class="atf-insp-c">Screening similarity, not a match or safety rating.</p>
+    <div class="atf-live atf-live-compact" data-atf-live="" data-site="atacama">
+      <p class="atf-live-k"><span class="atf-dot" aria-hidden="true"></span> Live NASA context</p>
+      <p class="atf-live-line" data-live-power="" role="status">
+        <strong>NASA POWER</strong> · surface skin 2.8–19.4 °C ·
+        solar 294 W/m² · pressure 67.9 kPa · AOD 0.08
+        <small>NASA POWER monthly (MERRA-2) · 2025 · fetched 1:44:12 PM </small>
+        <span class="atf-recompute">Live recompute <b>50</b> · cached 50 · Δ +0</span></p>
+      <p class="atf-live-line" data-live-eonet=""><strong>NASA EONET</strong> · no open events within 300 km <small>(39 open events scanned)</small><p class="atf-note">Hazard context only — wildfires, storms or volcanic activity near a window do not make it unsafe or unsuitable for analog work.</p></p>
+    </div>
+  </div></div>
+      <dl class="fl"><div><dt>Fit</dt><dd><strong>50</strong> / 100 <small style="display:block;font-size:0.75em;color:#aaa">likely 50, likely 40–59</small></dd></div><div><dt>Comparable conditions</dt><dd><strong>7 of 12</strong> measured</dd></div><div><dt>Purpose status</dt><dd>Screened for Rover Mobility</dd></div><div><dt>Access and permits</dt><dd>Chile · Atacama</dd></div></dl>
+      <p class="ins-go"><a class="go-sm" href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Open Site Detail</a></p>
+      <ul class="cl" aria-label="Twelve conditions"><li class="em">Slope<em>Emphasized for Rover Mobility</em><span>9.87° median <b class="atf-badge atf-badge-ok">Partial overlap</b></span></li><li class="em">Roughness<em>Emphasized for Rover Mobility</em><span>0.441 m RMS <b class="atf-badge atf-badge-ok">Partial overlap</b></span></li><li>Elevation &amp; topography<span>364.8 m relief <b class="atf-badge atf-badge-ok">Gap</b></span></li><li>Temperature extremes<span>2.86° to 17.05°C <b class="atf-badge atf-badge-gap">Gap</b></span></li><li>Illumination &amp; low Sun<span>307.22 W/m² <b class="atf-badge atf-badge-gap">Gap</b></span></li><li>Atmospheric pressure<span>67.86 kPa <b class="atf-badge atf-badge-ex">Excluded</b></span></li><li>Ice, snow &amp; moisture<span>Not acquired <b class="atf-badge atf-badge-na">Missing</b></span></li><li>Geology &amp; minerals<span>Not acquired <b class="atf-badge atf-badge-na">Missing</b></span></li><li>Dust &amp; wind<span>AOD 0.07 · 2.7 m/s <b class="atf-badge atf-badge-ok">Partial overlap</b></span></li><li>Craters &amp; rocks<span>Not acquired <b class="atf-badge atf-badge-na">Missing</b></span></li><li>Caves &amp; lava tubes<span>Not acquired <b class="atf-badge atf-badge-na">Missing</b></span></li><li>Access &amp; hazards<span>Not acquired <b class="atf-badge atf-badge-na">Missing</b></span></li></ul>
+      <p class="cn">7 of 12 conditions measured (58% data completeness). 5 unmeasured gaps.</p>
+      
+      <div id="profile" class="profile unavailable">
+    <div class="atf-profile-chart" style="margin:10px 0;background:#151515;border:1px solid #333;padding:10px 12px 8px;border-radius:4px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <strong style="font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:#F0C419">Elevation Transect (W → E, 2 km)</strong>
+        <span style="font-size:10.5px;color:#888">49 points · 37.5 m step</span>
+      </div>
+      <svg viewBox="0 0 360 90" style="width:100%;height:auto;display:block" role="img" aria-label="Elevation profile across 2 km">
+        <defs>
+          <linearGradient id="atfGrad_atacama" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F0C419" stop-opacity="0.45"></stop>
+            <stop offset="100%" stop-color="#F0C419" stop-opacity="0.03"></stop>
+          </linearGradient>
+        </defs>
+        <line x1="0" y1="12" x2="360" y2="12" stroke="rgba(255,255,255,0.06)" stroke-width="1"></line>
+        <line x1="0" y1="40" x2="360" y2="40" stroke="rgba(255,255,255,0.06)" stroke-width="1"></line>
+        <line x1="0" y1="68" x2="360" y2="68" stroke="rgba(255,255,255,0.18)" stroke-width="1"></line>
+        <polygon points="0,68 0.0,63.8 7.5,63.5 15.0,62.7 22.5,62.6 30.0,63.2 37.5,63.8 45.0,64.7 52.5,64.9 60.0,64.5 67.5,63.9 75.0,63.4 82.5,63.1 90.0,62.4 97.5,61.3 105.0,58.9 112.5,55.7 120.0,52.8 127.5,49.7 135.0,46.6 142.5,43.7 150.0,41.1 157.5,39.4 165.0,38.9 172.5,38.5 180.0,38.5 187.5,38.6 195.0,38.6 202.5,38.6 210.0,38.6 217.5,38.4 225.0,37.9 232.5,37.7 240.0,37.3 247.5,36.8 255.0,36.3 262.5,36.0 270.0,35.4 277.5,34.6 285.0,33.8 292.5,32.8 300.0,31.3 307.5,30.2 315.0,29.4 322.5,28.7 330.0,28.1 337.5,27.8 345.0,27.1 352.5,26.2 360.0,25.5 360,68" fill="url(#atfGrad_atacama)"></polygon>
+        <polyline points="0.0,63.8 7.5,63.5 15.0,62.7 22.5,62.6 30.0,63.2 37.5,63.8 45.0,64.7 52.5,64.9 60.0,64.5 67.5,63.9 75.0,63.4 82.5,63.1 90.0,62.4 97.5,61.3 105.0,58.9 112.5,55.7 120.0,52.8 127.5,49.7 135.0,46.6 142.5,43.7 150.0,41.1 157.5,39.4 165.0,38.9 172.5,38.5 180.0,38.5 187.5,38.6 195.0,38.6 202.5,38.6 210.0,38.6 217.5,38.4 225.0,37.9 232.5,37.7 240.0,37.3 247.5,36.8 255.0,36.3 262.5,36.0 270.0,35.4 277.5,34.6 285.0,33.8 292.5,32.8 300.0,31.3 307.5,30.2 315.0,29.4 322.5,28.7 330.0,28.1 337.5,27.8 345.0,27.1 352.5,26.2 360.0,25.5" fill="none" stroke="#F0C419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+        <text x="4" y="84" fill="#777" font-size="9.5" font-family="monospace">0 m (West)</text>
+        <text x="356" y="84" text-anchor="end" fill="#777" font-size="9.5" font-family="monospace">1800 m (East)</text>
+      </svg>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:#bbb;margin-top:6px;border-top:1px solid rgba(255,255,255,0.08);padding-top:4px">
+        <span>Relief: <b style="color:#fff">364.8 m</b></span>
+        <span>Min: <b style="color:#fff">3263 m</b></span>
+        <span>Max: <b style="color:#fff">3627.8 m</b></span>
+      </div>
+    </div></div>
+      <p class="gp">Terrain resemblance alone does not reproduce the lunar environment. Gravity, vacuum and radiation remain limitations.</p>
+      <div class="rg"><button type="button" data-open="registry">Data Registry</button> <button type="button" data-open="aiuse">AI-use record</button><p>Context images available; analytical observations pending.</p></div></div></aside></li><li data-id="haughton"><button class="nm img-ok" type="button" data-id="haughton" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="Haughton Crater region"><span class="t" style="background-image: url(&quot;/img/regions/haughton/letter-800.webp&quot;);">Haughton Crater region</span><small>Selected. Awaiting study-area review</small></button></li><li data-id="svalbard"><button class="nm img-ok" type="button" data-id="svalbard" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="Svalbard"><span class="t" style="background-image: url(&quot;/img/regions/svalbard/letter-800.webp&quot;);">Svalbard</span><small>Selected. Awaiting study-area review</small></button></li><li data-id="mcmurdo"><button class="nm img-ok" type="button" data-id="mcmurdo" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="McMurdo Dry Valleys"><span class="t" style="background-image: url(&quot;/img/regions/mcmurdo/letter-800.webp&quot;);">McMurdo Dry Valleys</span><small>Selected. Awaiting study-area review</small></button></li><li data-id="riotinto"><button class="nm img-ok" type="button" data-id="riotinto" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="Rio Tinto basin"><span class="t" style="background-image: url(&quot;/img/regions/riotinto/letter-800.webp&quot;);">Rio Tinto basin</span><small>Selected. Awaiting study-area review</small></button></li><li data-id="hawaii"><button class="nm img-ok" type="button" data-id="hawaii" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="Hawaii volcanic terrain"><span class="t" style="background-image: url(&quot;/img/regions/hawaii/letter-800.webp&quot;);">Hawaii volcanic terrain</span><small>Selected. Awaiting study-area review</small></button></li><li data-id="mauna_ulu_window"><button class="nm" type="button" data-id="mauna_ulu_window" aria-pressed="false" aria-expanded="false" aria-controls="insp" title="Mauna Ulu area, Hawaiʻi"><span class="t">Mauna Ulu area, Hawaiʻi</span><small>Selected. Bounded study window · computed terrain evidence</small></button></li></ul>
+    <section class="mapband" aria-labelledby="mapH">
+      <div class="mb-k" tabindex="0" role="region" aria-label="Map context and attribution">
+        <h2 id="mapH">Map</h2>
+        
+        <div id="atf-map-host" class="atf-map-host" data-key="map|moon_south_pole_ridge|rover_mobility">
+    <details class="atf-mapctl" open="">
+      <summary class="atf-summary">Screening layers</summary>
+      <div class="atf-toggles">
+        <label><input type="checkbox" data-atf-layer="sites" checked=""> 7 screening windows</label>
+        <label><input type="checkbox" data-atf-layer="lst"> MODIS land-surface temp (day)</label>
+        <label><input type="checkbox" data-atf-layer="aod"> MODIS aerosol optical depth</label>
+      </div>
+      <div class="atf-map-actions">
+        <button type="button" class="atf-btn atf-btn-sm" data-atf-fitall="">Fit all 7 windows</button>
+      </div>
+      <p class="atf-mini" data-atf-mapstate="" data-ready="1">Map layers installed · 7 screening windows · click a marker to open Site Detail.</p>
+      <p class="atf-mini atf-attr">Overlays: NASA GIBS, live tiles. Context only.</p>
+    </details></div><p id="mapNote">One bounded study window is outlined: Mauna Ulu area, Hawaiʻi (2 × 2 km). The other candidates have no defined study area yet, so they are not marked. The basemap is coarse context only.</p>
+        <button class="mb-btn" id="mapExpand" hidden="" type="button" aria-pressed="false" aria-controls="map">Expand map</button>
+        <p class="mb-view" id="mapView" aria-live="polite"></p>
+        <p class="attr" id="mapAttr">Basemap: Blue Marble, August 2004 (MODIS / NASA Earth Observatory) via NASA GIBS, desaturated.</p>
+      </div>
+      <div class="map maplibregl-map" id="map" aria-label="Geographic map, context only. Use the candidate list for the choices.">
+        <p class="map-state" id="mapState" role="status" aria-live="polite" hidden=""></p>
+      <div class="maplibregl-canvas-container maplibregl-interactive maplibregl-touch-drag-pan maplibregl-touch-zoom-rotate"><canvas class="maplibregl-canvas" tabindex="0" aria-label="Map" role="region" width="749" height="260" style="width: 749px; height: 260px;"></canvas><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(375px, 148px) rotateX(0deg) rotateZ(0deg); opacity: 1;"><button class="fp-btn" type="button" data-id="atacama" aria-pressed="false" aria-label="Atacama, 2 by 2 kilometre study window">Atacama<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(-16005px, -313836px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="haughton" aria-pressed="false" aria-label="Haughton Crater region, 2 by 2 kilometre study window">Haughton Crater region<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(185379px, -341179px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="svalbard" aria-pressed="false" aria-label="Svalbard, 2 by 2 kilometre study window">Svalbard<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(-285310px, 226634px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="mcmurdo" aria-pressed="false" aria-label="McMurdo Dry Valleys, 2 by 2 kilometre study window">McMurdo Dry Valleys<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(135976px, -144055px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="riotinto" aria-pressed="false" aria-label="Rio Tinto basin, 2 by 2 kilometre study window">Rio Tinto basin<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(-192333px, -97826px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="hawaii" aria-pressed="false" aria-label="Hawaii volcanic terrain, 2 by 2 kilometre study window">Hawaii volcanic terrain<small>2 × 2 km study window</small></button></div><div class="fp-mk maplibregl-marker maplibregl-marker-anchor-top" style="transform: translate(-50%, 0px) translate(-192157px, -97685px) rotateX(0deg) rotateZ(0deg);"><button class="fp-btn" type="button" data-id="mauna_ulu_window" aria-pressed="false" aria-label="Mauna Ulu area, Hawaiʻi, 2 by 2 kilometre study window">Mauna Ulu area, Hawaiʻi<small>2 × 2 km study window</small></button></div></div><div class="maplibregl-control-container"><div class="maplibregl-ctrl-top-left "></div><div class="maplibregl-ctrl-top-right "><div class="maplibregl-ctrl maplibregl-ctrl-group"><button class="maplibregl-ctrl-zoom-in" type="button" title="Zoom in" aria-label="Zoom in" aria-disabled="false"><span class="maplibregl-ctrl-icon" aria-hidden="true"></span></button><button class="maplibregl-ctrl-zoom-out" type="button" title="Zoom out" aria-label="Zoom out" aria-disabled="false"><span class="maplibregl-ctrl-icon" aria-hidden="true"></span></button></div></div><div class="maplibregl-ctrl-bottom-left "></div><div class="maplibregl-ctrl-bottom-right "><details class="maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show" open=""><summary class="maplibregl-ctrl-attrib-button" title="Toggle attribution" aria-label="Toggle attribution"></summary><div class="maplibregl-ctrl-attrib-inner">Imagery: <a href="https://earthdata.nasa.gov/gibs">NASA GIBS</a>, Blue Marble Shaded Relief and Bathymetry (MODIS)</div></details></div></div></div>
+    </section>
+    <footer class="disc"><p id="disc">ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</p><button type="button" class="about-btn" id="aboutBtn" aria-haspopup="dialog" aria-controls="about">About ArtemisTwin</button></footer>
+  </div>
+  <div class="slot" id="slot"></div>
+</div>
+<p class="route-note" id="routeNote" role="status"><p>The link asked for site “custom_test”, which is not in the catalog. Showing the Match Map instead.</p><button type="button" data-close-note="">Dismiss</button></p>
+<main class="view" id="vStart" hidden=""><header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Screens" id="nav-v0"><a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Target &amp; Purpose</a><a href="#/map?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama" aria-current="page">Match Map</a><a href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility" title="Atacama">Site Detail</a><a href="#/portfolio?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Portfolio &amp; Gaps</a><a href="#/viewer?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Twin Viewer</a></nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-v0">Screens</button>
+    </header><div class="v-body" id="startBody"></div>
+  <footer class="disc v-disc"><p data-disc="">ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</p><button type="button" class="about-btn" data-about="" aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vDetail" hidden=""><header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Screens" id="nav-v1"><a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Target &amp; Purpose</a><a href="#/map?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama" aria-current="page">Match Map</a><a href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility" title="Atacama">Site Detail</a><a href="#/portfolio?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Portfolio &amp; Gaps</a><a href="#/viewer?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Twin Viewer</a></nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-v1">Screens</button>
+    </header><div class="v-body" id="detailBody"></div>
+  <footer class="disc v-disc"><p data-disc="">ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</p><button type="button" class="about-btn" data-about="" aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vPortfolio" hidden=""><header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Screens" id="nav-v2"><a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Target &amp; Purpose</a><a href="#/map?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama" aria-current="page">Match Map</a><a href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility" title="Atacama">Site Detail</a><a href="#/portfolio?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Portfolio &amp; Gaps</a><a href="#/viewer?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Twin Viewer</a></nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-v2">Screens</button>
+    </header><div class="v-body" id="portfolioBody"></div>
+  <footer class="disc v-disc"><p data-disc="">ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</p><button type="button" class="about-btn" data-about="" aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vViewer" hidden=""><header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Screens" id="nav-v3"><a href="#/start?target=moon_south_pole_ridge&amp;purpose=rover_mobility">Target &amp; Purpose</a><a href="#/map?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama" aria-current="page">Match Map</a><a href="#/site/atacama?target=moon_south_pole_ridge&amp;purpose=rover_mobility" title="Atacama">Site Detail</a><a href="#/portfolio?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Portfolio &amp; Gaps</a><a href="#/viewer?target=moon_south_pole_ridge&amp;purpose=rover_mobility&amp;site=atacama">Twin Viewer</a></nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-v3">Screens</button>
+    </header><div class="v-body" id="viewerBody"></div>
+  <footer class="disc v-disc"><p data-disc="">ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</p><button type="button" class="about-btn" data-about="" aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<dialog class="about reg" id="registry" aria-labelledby="regH">
+  <div class="about-in reg-in"><button type="button" class="about-x" data-close="">Close</button><h2 id="regH">Data Registry</h2><div id="regBody"></div></div>
+</dialog>
+<dialog class="about reg" id="aiuse" aria-labelledby="aiH">
+  <div class="about-in reg-in"><button type="button" class="about-x" data-close="">Close</button><h2 id="aiH">AI-use record</h2><div id="aiBody"></div></div>
+</dialog>
+<dialog class="about" id="about" aria-labelledby="aboutH">
+  <div class="about-in">
+    <button type="button" class="about-x" id="aboutClose" data-close="">Close</button>
+    <h2 class="vh" id="aboutH">About ArtemisTwin</h2>
+    <div class="lg lg-about" role="img" aria-label="ArtemisTwin — Exploration &amp; Analogs">
+      <div class="lg-e"><img src="/assets/emblem-240-Zn9TeycG.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="197px" width="421" height="402" alt="" fetchpriority="high"><span class="sweep" aria-hidden="true"></span></div>
+      <img class="lg-w" src="/assets/wordmark-36-C18Ey7Py.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="240px" width="514" height="64" alt="">
+      <img class="lg-g" src="/assets/tagline-16-Di8291iu.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="190px" width="406" height="22" alt="">
+      <p class="lg-text" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></p>
+    </div>
+    <div class="about-tx">
+      <p>ArtemisTwin compares documented Earth analog candidates for a specific lunar or Martian test: a target, a purpose, and the places on Earth that might stand in for it.</p>
+      <p><strong>ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</strong></p>
+      <p>Terrain resemblance alone does not reproduce the lunar environment. Gravity, vacuum and radiation remain limitations.</p>
+      <p>Comparable conditions stay marked “Evidence pending” until paired, source-backed observations and a stated method exist. The list is in catalog order, not a ranking.</p>
+      <h3>Credits</h3>
+      <ul class="about-cr" id="aboutCredits"><li>Atacama: NASA/CampoAlto/Victor Robles.</li><li>Haughton Crater region: NASA/GSFC/LaRC/JPL, MISR Team (Terra, 28 June 2001; PIA03714).</li><li>Svalbard: NASA Earth Observatory image by Joshua Stevens, using Landsat 9 data from the USGS (29 July 2022).</li><li>McMurdo Dry Valleys: NASA/GSFC/METI/ERSDAC/JAROS and U.S./Japan ASTER Science Team (Terra, 8 Dec 2002; PIA12461).</li><li>Rio Tinto basin: NASA Earth Observatory image by Joshua Stevens, using Landsat 8 data from the USGS (2 Feb 2020).</li><li>Hawaii volcanic terrain: NASA.</li><li>Basemap: Blue Marble, August 2004 (MODIS / NASA Earth Observatory) via NASA GIBS.</li><li>Typefaces: Big Shoulders Display and Instrument Sans, SIL Open Font License.</li></ul>
+    </div>
+  </div>
+</dialog>
+
+
+</body></html>

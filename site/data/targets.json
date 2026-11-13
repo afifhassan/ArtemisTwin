@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "1.0",
+  "methodVersion": "screening-fit-1.0",
+  "generated": "2026-11-13T07:10:28Z",
+  "scientificNote": "Target values are screening envelopes for a stated purpose, not measurements of one landing site and not a site selection. Earth cannot reproduce gravity, vacuum, radiation or true polar lighting.",
+  "sources": {
+    "nssdc_moon": {
+      "title": "Moon Fact Sheet",
+      "publisher": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    "nssdc_mars": {
+      "title": "Mars Fact Sheet",
+      "publisher": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "diviner": {
+      "title": "Global surface temperatures of the Moon from Diviner (Williams et al., 2017, Icarus 283)",
+      "publisher": "NASA JPL / Diviner Lunar Radiometer Experiment",
+      "url": "https://doi.org/10.1016/j.icarus.2016.08.012"
+    },
+    "lola": {
+      "title": "Improved LOLA elevation maps for lunar south pole landing sites (Barker et al., 2021)",
+      "publisher": "NASA GSFC / PGDA",
+      "url": "https://pgda.gsfc.nasa.gov/products/78"
+    },
+    "mola": {
+      "title": "Mars Orbiter Laser Altimeter topography (Smith et al., 2001, JGR)",
+      "publisher": "NASA MGS / MOLA",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/mola.html"
+    },
+    "arcadia": {
+      "title": "Arcadia Planitia ice-plain screening envelope — analyst-set pending study-area review",
+      "publisher": "ArtemisTwin team (not a published measurement)",
+      "url": "https://www.nasa.gov/mission/artemis/"
+    },
+    "marius": {
+      "title": "Marius Hills pit thermal context — analyst-set envelope from Diviner pit studies",
+      "publisher": "ArtemisTwin team (not a published measurement)",
+      "url": "https://lroc.im-ldi.com/images/78"
+    }
+  },
+  "planetary_targets": [
+    {
+      "target_id": "moon_south_pole_ridge",
+      "target_name": "Moon South-Pole Ridge",
+      "body": "Moon",
+      "catalog_id": "moon_south_pole_ridge",
+      "status": "screening envelope, not a site selection",
+      "study_area": "Connecting Ridge window context (LOLA south polar stereographic)",
+      "envelope_note": "Values describe a south-polar ridge screening envelope. They are not a measurement of one pixel and do not select a landing site.",
+      "layers": {
+        "L1_elevation": {
+          "target_val": 180,
+          "tolerance": 300,
+          "unit": "m",
+          "comparability": "direct",
+          "source": "lola",
+          "note": "Local relief of the ridge window.",
+          "basis": "relief"
+        },
+        "L2_slope": {
+          "target_val": 15.0,
+          "tolerance": 10.0,
+          "unit": "deg",
+          "comparability": "direct",
+          "source": "lola",
+          "note": "Ridge flanks and adjacent cratered ground.",
+          "basis": "mean slope"
+        },
+        "L3_roughness": {
+          "target_val": 0.35,
+          "tolerance": 0.3,
+          "unit": "index",
+          "comparability": "direct",
+          "source": "lola",
+          "note": "Normalised screening roughness envelope.",
+          "basis": "TRI/cell"
+        },
+        "L4_temperature_max": {
+          "target_val": -40.0,
+          "tolerance": 35.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "diviner",
+          "note": "Sunlit polar ridge warm-season value.",
+          "basis": "warm-month skin temperature"
+        },
+        "L4_temperature_min": {
+          "target_val": -190.0,
+          "tolerance": 40.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "diviner",
+          "note": "Cold-season polar value; PSR floors are colder still.",
+          "basis": "cold-month skin temperature"
+        },
+        "L5_solar_illumination": {
+          "target_val": 25.0,
+          "tolerance": 30.0,
+          "unit": "W/m^2",
+          "comparability": "proxy",
+          "source": "lola",
+          "note": "Low-Sun polar illumination envelope.",
+          "basis": "annual mean irradiance"
+        },
+        "L6_surface_pressure": {
+          "target_val": 0.0,
+          "tolerance": 0.1,
+          "unit": "kPa",
+          "comparability": "excluded",
+          "source": "nssdc_moon",
+          "note": "Vacuum. Earth cannot reproduce this at a surface site.",
+          "basis": "pressure"
+        },
+        "L7_ice_volatiles": {
+          "target_val": 0.05,
+          "tolerance": 0.1,
+          "unit": "VWE %",
+          "comparability": "proxy",
+          "source": "lola",
+          "note": "Possible polar volatiles; no Earth value acquired.",
+          "basis": "water-equivalent"
+        },
+        "L8_mineralogy": {
+          "target_val": 0.85,
+          "tolerance": 0.25,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "lola",
+          "note": "Anorthositic highland index; no Earth value acquired.",
+          "basis": "spectral index"
+        },
+        "L9_dust_hazard": {
+          "target_val": 0.15,
+          "tolerance": 0.3,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "nssdc_moon",
+          "note": "No aeolian dust; regolith abrasion is a separate hazard.",
+          "basis": "AOD-equivalent index"
+        },
+        "L10_rock_abundance": {
+          "target_val": 15.0,
+          "tolerance": 15.0,
+          "unit": "%",
+          "comparability": "proxy",
+          "source": "lola",
+          "note": "Screening rock-cover envelope; no Earth value acquired.",
+          "basis": "rock cover"
+        },
+        "L11_cave_proximity": {
+          "target_val": 10.0,
+          "tolerance": 20.0,
+          "unit": "km",
+          "comparability": "proxy",
+          "source": "lola",
+          "note": "Distance to a candidate pit or tube; no Earth value acquired.",
+          "basis": "distance"
+        },
+        "L12_access": {
+          "target_val": 0.0,
+          "tolerance": 0.0,
+          "unit": "km",
+          "comparability": "context",
+          "source": "nssdc_moon",
+          "note": "Not a field site; context only.",
+          "basis": "access"
+        }
+      }
+    },
+    {
+      "target_id": "moon_lava_tube_region",
+      "target_name": "Moon Lava-Tube Region",
+      "body": "Moon",
+      "catalog_id": "moon_lava_tube_region",
+      "status": "screening envelope, not a site selection",
+      "study_area": "Marius Hills pit context (no bounded study area adopted)",
+      "envelope_note": "Pit-interior envelope. The shaded pit floor is thermally buffered; the surrounding mare surface is far hotter.",
+      "layers": {
+        "L1_elevation": {
+          "target_val": 60.0,
+          "tolerance": 150.0,
+          "unit": "m",
+          "comparability": "direct",
+          "source": "marius",
+          "note": "Pit and surrounding relief envelope.",
+          "basis": "relief"
+        },
+        "L2_slope": {
+          "target_val": 8.0,
+          "tolerance": 8.0,
+          "unit": "deg",
+          "comparability": "direct",
+          "source": "marius",
+          "note": "Mare surface with pit walls.",
+          "basis": "mean slope"
+        },
+        "L3_roughness": {
+          "target_val": 0.45,
+          "tolerance": 0.35,
+          "unit": "index",
+          "comparability": "direct",
+          "source": "marius",
+          "note": "Rough mare and pit rim.",
+          "basis": "TRI/cell"
+        },
+        "L4_temperature_max": {
+          "target_val": 0.0,
+          "tolerance": 40.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "diviner",
+          "note": "Buffered pit-interior warm value.",
+          "basis": "warm-month skin temperature"
+        },
+        "L4_temperature_min": {
+          "target_val": -40.0,
+          "tolerance": 40.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "diviner",
+          "note": "Buffered pit-interior cold value.",
+          "basis": "cold-month skin temperature"
+        },
+        "L5_solar_illumination": {
+          "target_val": 5.0,
+          "tolerance": 20.0,
+          "unit": "W/m^2",
+          "comparability": "proxy",
+          "source": "diviner",
+          "note": "Largely shadowed pit interior.",
+          "basis": "annual mean irradiance"
+        },
+        "L6_surface_pressure": {
+          "target_val": 0.0,
+          "tolerance": 0.1,
+          "unit": "kPa",
+          "comparability": "excluded",
+          "source": "nssdc_moon",
+          "note": "Vacuum. Earth cannot reproduce this at a surface site.",
+          "basis": "pressure"
+        },
+        "L7_ice_volatiles": {
+          "target_val": 0.02,
+          "tolerance": 0.05,
+          "unit": "VWE %",
+          "comparability": "proxy",
+          "source": "marius",
+          "note": "Possible cold-trap ice; no Earth value acquired.",
+          "basis": "water-equivalent"
+        },
+        "L8_mineralogy": {
+          "target_val": 0.7,
+          "tolerance": 0.25,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "marius",
+          "note": "Basaltic mare index; no Earth value acquired.",
+          "basis": "spectral index"
+        },
+        "L9_dust_hazard": {
+          "target_val": 0.1,
+          "tolerance": 0.2,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "nssdc_moon",
+          "note": "No aeolian dust.",
+          "basis": "AOD-equivalent index"
+        },
+        "L10_rock_abundance": {
+          "target_val": 20.0,
+          "tolerance": 20.0,
+          "unit": "%",
+          "comparability": "proxy",
+          "source": "marius",
+          "note": "Rim and floor rock cover; no Earth value acquired.",
+          "basis": "rock cover"
+        },
+        "L11_cave_proximity": {
+          "target_val": 1.0,
+          "tolerance": 5.0,
+          "unit": "km",
+          "comparability": "proxy",
+          "source": "marius",
+          "note": "Pit entrance is the target itself; no Earth value acquired.",
+          "basis": "distance"
+        },
+        "L12_access": {
+          "target_val": 0.0,
+          "tolerance": 0.0,
+          "unit": "km",
+          "comparability": "context",
+          "source": "marius",
+          "note": "Not a field site; context only.",
+          "basis": "access"
+        }
+      }
+    },
+    {
+      "target_id": "mars_ice_plain",
+      "target_name": "Mars Ice Plain (Arcadia Planitia context)",
+      "body": "Mars",
+      "catalog_id": "mars_ice_plain",
+      "status": "screening envelope, not a site selection",
+      "study_area": "Mid-latitude plains with buried ice (no bounded study area adopted)",
+      "envelope_note": "Mid-latitude ice-plain envelope. It is analyst-set from published mission context; it does not select a landing site.",
+      "layers": {
+        "L1_elevation": {
+          "target_val": 50.0,
+          "tolerance": 200.0,
+          "unit": "m",
+          "comparability": "direct",
+          "source": "mola",
+          "note": "Plains relief envelope.",
+          "basis": "relief"
+        },
+        "L2_slope": {
+          "target_val": 3.0,
+          "tolerance": 5.0,
+          "unit": "deg",
+          "comparability": "direct",
+          "source": "mola",
+          "note": "Low-relief plains.",
+          "basis": "mean slope"
+        },
+        "L3_roughness": {
+          "target_val": 0.1,
+          "tolerance": 0.15,
+          "unit": "index",
+          "comparability": "direct",
+          "source": "mola",
+          "note": "Smooth plain with local ice-related texture.",
+          "basis": "TRI/cell"
+        },
+        "L4_temperature_max": {
+          "target_val": -10.0,
+          "tolerance": 25.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "nssdc_mars",
+          "note": "Warm-season surface envelope.",
+          "basis": "warm-month skin temperature"
+        },
+        "L4_temperature_min": {
+          "target_val": -95.0,
+          "tolerance": 25.0,
+          "unit": "C",
+          "comparability": "proxy",
+          "source": "nssdc_mars",
+          "note": "Cold-season surface envelope.",
+          "basis": "cold-month skin temperature"
+        },
+        "L5_solar_illumination": {
+          "target_val": 110.0,
+          "tolerance": 60.0,
+          "unit": "W/m^2",
+          "comparability": "proxy",
+          "source": "nssdc_mars",
+          "note": "Mid-latitude annual mean.",
+          "basis": "annual mean irradiance"
+        },
+        "L6_surface_pressure": {
+          "target_val": 0.62,
+          "tolerance": 0.2,
+          "unit": "kPa",
+          "comparability": "excluded",
+          "source": "nssdc_mars",
+          "note": "~0.6 kPa. Earth surface sites cannot reproduce it; laboratory or balloon context only.",
+          "basis": "pressure"
+        },
+        "L7_ice_volatiles": {
+          "target_val": 0.35,
+          "tolerance": 0.3,
+          "unit": "VWE %",
+          "comparability": "proxy",
+          "source": "arcadia",
+          "note": "Buried-ice envelope; no Earth value acquired.",
+          "basis": "water-equivalent"
+        },
+        "L8_mineralogy": {
+          "target_val": 0.7,
+          "tolerance": 0.25,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "arcadia",
+          "note": "Dust-covered plains index; no Earth value acquired.",
+          "basis": "spectral index"
+        },
+        "L9_dust_hazard": {
+          "target_val": 0.6,
+          "tolerance": 0.35,
+          "unit": "index",
+          "comparability": "proxy",
+          "source": "nssdc_mars",
+          "note": "Dust-storm season envelope.",
+          "basis": "AOD-equivalent index"
+        },
+        "L10_rock_abundance": {
+          "target_val": 8.0,
+          "tolerance": 8.0,
+          "unit": "%",
+          "comparability": "proxy",
+          "source": "arcadia",
+          "note": "Screening rock-cover envelope; no Earth value acquired.",
+          "basis": "rock cover"
+        },
+        "L11_cave_proximity": {
+          "target_val": 50.0,
+          "tolerance": 50.0,
+          "unit": "km",
+          "comparability": "proxy",
+          "source": "arcadia",
+          "note": "No candidate cave adopted; no Earth value acquired.",
+          "basis": "distance"
+        },
+        "L12_access": {
+          "target_val": 0.0,
+          "tolerance": 0.0,
+          "unit": "km",
+          "comparability": "context",
+          "source": "arcadia",
+          "note": "Not a field site; context only.",
+          "basis": "access"
+        }
+      }
+    }
+  ]
+}

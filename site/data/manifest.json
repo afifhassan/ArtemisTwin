@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:28Z",
+  "files": {
+    "layers.csv": {
+      "bytes": 2923,
+      "sha256": "825d738c47bf0ddac10aa4f33bf3f1d633a35c9323ea12b41ef477236e68f840"
+    },
+    "layers.json": {
+      "bytes": 5970,
+      "sha256": "3ef0bcb4da7c89ee77669037a24c253ee62783d039fd318d61edec2a9c225d01"
+    },
+    "sites.csv": {
+      "bytes": 3414,
+      "sha256": "6eddb5561d47ea1cf556955d158294bbfb3c7b5466ca90301be7dbf27fdbe848"
+    },
+    "sites.json": {
+      "bytes": 25201,
+      "sha256": "3a495975586ed7ec02a61b5e27e4b019f58a1534a1fc0d76b472deaa37440c18"
+    },
+    "targets.json": {
+      "bytes": 15110,
+      "sha256": "e6e16d9f1af4933097be4fa7be684ef9f7b3f202aa9ebbeeb66aac221eaad71c"
+    },
+    "scores.json": {
+      "bytes": 398236,
+      "sha256": "d2c12c2a1def6555562e75515cb3ff3e589f8448eb9be741d2fce1aaf838943d"
+    },
+    "model.json": {
+      "bytes": 13322,
+      "sha256": "a43c4d69031287c1ef8b6ba29b15879c4a55bc549e529bd9dd3de4fdcf93947f"
+    },
+    "provenance.json": {
+      "bytes": 17687,
+      "sha256": "b02f08325d818484c141ebcc2aa2f0cac233315627e20d42851c8b5af3c030b8"
+    },
+    "earth_analog_sites.geojson": {
+      "bytes": 9896,
+      "sha256": "132edfd450e984c9e7ff60d0aeb2a63017e84ebb965254975fe86958b68a1e85"
+    },
+    "sites_extracted.csv": {
+      "bytes": 3362,
+      "sha256": "45201420e970bc2a652d4c3d079ba65a979d85447d757f839156f41f6b9c2c81"
+    }
+  }
+}

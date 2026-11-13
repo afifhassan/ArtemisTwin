@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Raw / cached downloads (large, reproducible)
+data/raw_dems/
+data/earth_dems/
+data/earth_appeears_lst/
+data/lunar_diviner/
+data/cache/
+data/derived/terrain_grids/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local verification artefacts
+tests/artifacts/

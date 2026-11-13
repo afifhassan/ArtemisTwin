@@ -1,0 +1,332 @@
+{
+  "type": "FeatureCollection",
+  "name": "artemistwin_earth_analog_sites",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "metadata": {
+    "generated": "2026-11-13T07:10:28Z",
+    "description": "2 × 2 km screening windows used by the provisional ArtemisTwin analog fit model.",
+    "caveat": "Windows are analytical samples, not selected test sites, permitted areas or complete regional evidence."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -67.98982258337111,
+              -23.86904371732957
+            ],
+            [
+              -67.9701774166289,
+              -23.86904371732957
+            ],
+            [
+              -67.9701774166289,
+              -23.850956282670428
+            ],
+            [
+              -67.98982258337111,
+              -23.850956282670428
+            ],
+            [
+              -67.98982258337111,
+              -23.86904371732957
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "atacama",
+        "site_name": "Atacama Desert",
+        "country": "Chile",
+        "region": "Atacama",
+        "catalog_id": "atacama",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Atacama Desert",
+        "centre_lat": -23.86,
+        "centre_lon": -67.98,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.43558976918396,
+              75.37095628267042
+            ],
+            [
+              -75.36441023081605,
+              75.37095628267042
+            ],
+            [
+              -75.36441023081605,
+              75.38904371732957
+            ],
+            [
+              -75.43558976918396,
+              75.38904371732957
+            ],
+            [
+              -75.43558976918396,
+              75.37095628267042
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "haughton",
+        "site_name": "Haughton Impact Crater",
+        "country": "Canada",
+        "region": "Devon Island, Nunavut",
+        "catalog_id": "haughton",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Haughton Crater",
+        "centre_lat": 75.38,
+        "centre_lon": -75.4,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.786071955086644,
+              78.19095628267043
+            ],
+            [
+              15.873928044913356,
+              78.19095628267043
+            ],
+            [
+              15.873928044913356,
+              78.20904371732958
+            ],
+            [
+              15.786071955086644,
+              78.20904371732958
+            ],
+            [
+              15.786071955086644,
+              78.19095628267043
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "svalbard",
+        "site_name": "Svalbard (Adventdalen)",
+        "country": "Norway",
+        "region": "Svalbard",
+        "catalog_id": "svalbard",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Adventdalen",
+        "centre_lat": 78.2,
+        "centre_lon": 15.83,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              162.55816658642794,
+              -77.60904371732957
+            ],
+            [
+              162.64183341357204,
+              -77.60904371732957
+            ],
+            [
+              162.64183341357204,
+              -77.59095628267042
+            ],
+            [
+              162.55816658642794,
+              -77.59095628267042
+            ],
+            [
+              162.55816658642794,
+              -77.60904371732957
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "mcmurdo",
+        "site_name": "McMurdo Dry Valleys",
+        "country": "Antarctica",
+        "region": "Wright Valley",
+        "catalog_id": "mcmurdo",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Wright Valley",
+        "centre_lat": -77.6,
+        "centre_lon": 162.6,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.561351912455405,
+              37.68095628267043
+            ],
+            [
+              -6.538648087544595,
+              37.68095628267043
+            ],
+            [
+              -6.538648087544595,
+              37.699043717329566
+            ],
+            [
+              -6.561351912455405,
+              37.699043717329566
+            ],
+            [
+              -6.561351912455405,
+              37.68095628267043
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "riotinto",
+        "site_name": "Rio Tinto basin",
+        "country": "Spain",
+        "region": "Huelva",
+        "catalog_id": "riotinto",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Rio Tinto",
+        "centre_lat": 37.69,
+        "centre_lon": -6.55,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -155.2895250221258,
+              19.41095628267043
+            ],
+            [
+              -155.27047497787422,
+              19.41095628267043
+            ],
+            [
+              -155.27047497787422,
+              19.429043717329574
+            ],
+            [
+              -155.2895250221258,
+              19.429043717329574
+            ],
+            [
+              -155.2895250221258,
+              19.41095628267043
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "hawaii",
+        "site_name": "Hawaiʻi volcanic terrain",
+        "country": "USA (Hawaiʻi)",
+        "region": "Kīlauea",
+        "catalog_id": "hawaii",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km screening window, Kīlauea summit area",
+        "centre_lat": 19.42,
+        "centre_lon": -155.28,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -155.20959949454922,
+              19.350655282670427
+            ],
+            [
+              -155.19055650545076,
+              19.350655282670427
+            ],
+            [
+              -155.19055650545076,
+              19.36874271732957
+            ],
+            [
+              -155.20959949454922,
+              19.36874271732957
+            ],
+            [
+              -155.20959949454922,
+              19.350655282670427
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "mauna_ulu_window",
+        "site_name": "Mauna Ulu area, Hawaiʻi",
+        "country": "USA (Hawaiʻi)",
+        "region": "Mauna Ulu",
+        "catalog_id": "mauna_ulu_window",
+        "role": "2 × 2 km screening window",
+        "window_label": "2 × 2 km bounded study window, Mauna Ulu",
+        "centre_lat": 19.359699,
+        "centre_lon": -155.200078,
+        "window_km": 2.0,
+        "data_completeness_pct": 58.3,
+        "terrain_source": "AWS Terrain Tiles (Terrarium), z14; mixed SRTM/3DEP/ASTER/ETOPO1 composite",
+        "note": "Footprint drawn around the screening window, not an official study boundary or land-access claim."
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.8.0-rc.1",
+  "preparedOn": "2026-11-09",
+  "status": "team-review-candidate",
+  "delivery": "Frontend files for the team; not published",
+  "comparisonMethod": "bounded-terrain-1.0",
+  "comparisonSha256": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+  "targetImageApproval": "Pending owner review: LOLA and Marius Hills; Mars image choice pending. MOLA remains the current production candidate.",
+  "pendingBeforePublicRelease": [
+    "Owner target-image selection",
+    "Team hosting destination and hosted smoke test",
+    "Physical phone and assistive-technology checks",
+    "Neutral human usability review"
+  ],
+  "fit": null,
+  "ranking": null
+}

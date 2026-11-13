@@ -1,0 +1,21 @@
+{
+ "schemaVersion": "1.0",
+ "checked": "2026-11-09",
+ "note": "Context for the Twin Viewer. Each statement names its source; where no source was checked the value is Unknown. Terrain numbers come from the prepared comparison file, not from this file.",
+ "sources": {
+  "nasa_basalt": { "title": "What is BASALT?", "publisher": "NASA", "url": "https://www.nasa.gov/missions/analog-field-testing/what-is-basalt/", "pageDate": "2019-03-06", "pageUpdated": "2023-12-28", "retrieved": "2026-11-09" },
+  "lola_site01_2021": { "title": "High-Resolution LOLA Topography for Lunar South Pole Sites (Site01 Connecting ridge)", "publisher": "NASA GSFC / PGDA", "url": "https://pgda.gsfc.nasa.gov/products/78", "retrieved": "2026-11-09" }
+ },
+ "sites": {
+  "mauna-ulu-window": {
+   "geology": { "text": "NASA's BASALT project held its second field test in November 2016 \"on the lava flows of Mauna Ulu\" on the Big Island of Hawaiʻi, which NASA describes as an analog environment for early Mars. Basalt is the rock that forms from cooling lava. The age of the flows inside this 2 × 2 km window is not stated in the checked source.", "source": "nasa_basalt" },
+   "astrobiology": { "text": "BASALT aimed to \"understand the potential for volcanic environments rich in basalt rock to support microbial life\". No microbial measurement for this window is prepared.", "source": "nasa_basalt" },
+   "logistics": { "text": null, "unknown": "Access, permits, land management and travel are not checked. The checked NASA page does not state them for Mauna Ulu." }
+  },
+  "connecting-ridge-window": {
+   "geology": { "text": null, "unknown": "No geology source has been checked for this window. The elevation product (LOLA) describes shape, not rock type." },
+   "astrobiology": { "text": null, "unknown": "No astrobiology source has been checked for this window." },
+   "logistics": { "text": null, "unknown": "Not applicable as a field visit; mission access constraints are not part of this dataset." }
+  }
+ }
+}

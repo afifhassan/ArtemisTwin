@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "updated": "2026-11-09",
+  "summary": "Two AI coding agents helped build ArtemisTwin under the direction of the project owner, Rahmat, who made the design, logo, spelling and scope decisions. The provenance has three layers. Source observations: every elevation comes from NASA (LOLA) and USGS (3DEP) data; no model-generated guess replaces any elevation sample. Calculations: slopes, roughness, profiles and coordinate transformations are deterministic scripts anyone can rerun. Analysis boundaries: the two 2 × 2 km study windows were chosen by an AI agent, Codex, under the owner's authorization, so their boundaries are agent-selected. Nothing on this site calls an AI service while you use it.",
+  "entries": [
+    {
+      "who": "Claude (Anthropic), via Claude Code",
+      "what": "Wrote the website code and styles, the design and identity studies, the logo-layer extraction script (prepare-brand.py), the image-crop script and these records. Integrated the prepared comparison data into the site.",
+      "when": "7–9 November 2026"
+    },
+    {
+      "who": "Codex (OpenAI coding agent)",
+      "what": "Prepared the Connecting Ridge ↔ Mauna Ulu comparison: selected the two 2 × 2 km study windows (their boundaries were chosen by the agent, for complete elevation coverage, before any measurement was computed), wrote and ran the deterministic processing and verification scripts (prepare.py, verify.py), and independently reviewed the website builds. Took over website maintenance from Claude on 9 November 2026: retained the uncommitted P7 layout, fixed the Portfolio laboratory overlap and accessibility/recovery defects, and ran the P8 cross-browser, evidence, export and performance checks. Prepared the frontend handoff package; did not publish it.",
+      "when": "8–9 November 2026"
+    }
+  ],
+  "notAI": [
+    "Elevation samples: NASA LOLA and USGS 3DEP source data, unchanged. Slopes, roughness, profiles and the NAD83 → WGS 84 outline: deterministic calculations from those samples; anyone can rerun them (data-prep/codex-first-comparison/README.md). The study-window boundaries themselves were agent-selected (see Codex above).",
+    "Photographs: NASA and partner images, credited; none is AI-generated.",
+    "Basemap: NASA GIBS Blue Marble imagery.",
+    "Logo: supplied by the project owner and used unchanged in shape and colour. How the original artwork was made is not recorded in this project."
+  ],
+  "humanDecisions": "Design direction (Name Index), the fixed logo, the ArtemisTwin spelling, the dark-header variant and the first comparison pairing were decided or approved by Rahmat."
+}

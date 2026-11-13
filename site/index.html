@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-ready="starting">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon-BzuK_fR0.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/assets/favicon-32-DBDkr8A7.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-Ct9Boz3X.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#B9B7B0">
+<title>ArtemisTwin — Match Map</title>
+<meta name="description" content="ArtemisTwin: explore documented Earth analog candidates for a lunar or Martian test.">
+<noscript><style>#identity,#app{display:none!important}</style></noscript>
+  <script type="module" crossorigin src="/assets/main-vqEs0yEv.js"></script>
+  <script type="module" crossorigin src="/assets/analog-fit/analog-fit.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CAYeBYYj.css">
+  <link rel="stylesheet" crossorigin href="/assets/analog-fit/analog-fit.css">
+</head>
+<body>
+<noscript>
+  <div style="padding:32px;font:16px/1.5 system-ui,sans-serif;background:#B9B7B0;color:#141414;min-height:100vh">
+    <p style="display:flex;align-items:center;gap:14px;margin:0 0 16px"><img src="/assets/emblem-92-DieZSNMc.webp" width="96" height="92" alt=""><span><img src="/assets/wordmark-46-Bjx6U6v8.webp" width="369" height="46" alt="ArtemisTwin" style="max-width:60vw;height:auto;display:block"><img src="/assets/tagline-16-Di8291iu.webp" width="295" height="16" alt="Exploration &amp; Analogs" style="max-width:48vw;height:auto;display:block;margin-top:6px"></span></p>
+    <p>This catalog needs JavaScript to load its candidate list and map.</p>
+    <p><strong>ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</strong></p>
+  </div>
+</noscript>
+
+<div class="identity" id="identity" role="status" aria-live="polite">
+  <div class="op">
+    <p class="vh" id="idName">ArtemisTwin — Exploration &amp; Analogs</p>
+    <div class="lg lg-open" id="idLogo" aria-hidden="true">
+      <div class="lg-e"><img src="/assets/emblem-240-Zn9TeycG.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 480px) 52vw, 246px" width="421" height="402" alt="" fetchpriority="high"><span class="sweep" aria-hidden="true"></span></div>
+      <img class="lg-w" src="/assets/wordmark-36-C18Ey7Py.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 480px) 64vw, 300px" width="514" height="64" alt="">
+      <img class="lg-g" src="/assets/tagline-16-Di8291iu.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 480px) 51vw, 237px" width="406" height="22" alt="">
+      <p class="lg-text" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></p>
+    </div>
+    <span class="bar" id="idBar" aria-hidden="true" hidden></span>
+    <p class="msg" id="idMsg"></p>
+    <div class="act" id="idAct"></div>
+  </div>
+</div>
+<div class="app" id="app">
+  <div class="left">
+    <header class="hd">
+      <a class="brand lk" href="./" aria-label="ArtemisTwin home">
+        <img class="lk-e" src="/assets/emblem-92-DieZSNMc.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="(max-width: 360px) 38px, (max-width: 960px) 42px, 48px" width="421" height="402" alt="">
+        <span class="lk-t">
+          <img class="lk-w" src="/assets/wordmark-46-Bjx6U6v8.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="">
+          <img class="lk-w rev" src="/assets/wordmark-rev-46-BIaFl3Cz.webp" srcset="/assets/wordmark-rev-18-T8duKgZ6.webp 145w, /assets/wordmark-rev-23-CoLfAMJ5.webp 185w, /assets/wordmark-rev-36-BgaJU7n_.webp 289w, /assets/wordmark-rev-46-BIaFl3Cz.webp 369w, /assets/wordmark-rev-64-CiNA8TAH.webp 514w" sizes="(max-width: 360px) 145px, (max-width: 960px) 169px, 185px" width="514" height="64" alt="" loading="lazy">
+          <img class="lk-g" src="/assets/tagline-20-y5B903nH.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="">
+          <img class="lk-g rev" src="/assets/tagline-rev-20-BwTAH2vM.webp" srcset="/assets/tagline-rev-8-Da3u-KMl.webp 148w, /assets/tagline-rev-10-DM0uC6XE.webp 185w, /assets/tagline-rev-16-DmxEqWvE.webp 295w, /assets/tagline-rev-20-BwTAH2vM.webp 369w, /assets/tagline-rev-22-Bwcx4aUT.webp 406w" sizes="(max-width: 960px) 222px, 185px" width="406" height="22" alt="" loading="lazy">
+          <span class="lk-x" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></span>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Screens"></nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Screens</button>
+    </header>
+    <div class="intro">
+      <div><h1 id="h1"></h1><p class="helper" id="helper"></p></div>
+      <p class="tp"><span>Target<b id="target" data-ident="target"></b><small id="targetArea"></small></span><span>Purpose<b id="purpose" data-ident="purpose"></b></span></p>
+      <p class="list-note" id="listNote"></p>
+    </div>
+    <ul class="names" id="names" aria-label="Earth candidates, catalog order"></ul>
+    <section class="mapband" aria-labelledby="mapH">
+      <div class="mb-k" tabindex="0" role="region" aria-label="Map context and attribution">
+        <h2 id="mapH">Map</h2>
+        
+        <p id="mapNote"></p>
+        <button class="mb-btn" id="mapExpand" hidden type="button" aria-pressed="false" aria-controls="map">Expand map</button>
+        <p class="mb-view" id="mapView" aria-live="polite"></p>
+        <p class="attr" id="mapAttr">Basemap: Blue Marble, August 2004 (MODIS / NASA Earth Observatory) via NASA GIBS, desaturated.</p>
+      </div>
+      <div class="map" id="map" aria-label="Geographic map, context only. Use the candidate list for the choices.">
+        <p class="map-state" id="mapState" role="status" aria-live="polite" hidden></p>
+      </div>
+    </section>
+    <footer class="disc"><p id="disc"></p><button type="button" class="about-btn" id="aboutBtn" aria-haspopup="dialog" aria-controls="about">About ArtemisTwin</button></footer>
+  </div>
+  <div class="slot" id="slot"><aside class="insp" id="insp" aria-label="Site inspector" aria-live="polite"></aside></div>
+</div>
+<p class="route-note" id="routeNote" role="status" hidden></p>
+<main class="view" id="vStart" hidden><div class="view-hd"></div><div class="v-body" id="startBody"></div>
+  <footer class="disc v-disc"><p data-disc></p><button type="button" class="about-btn" data-about aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vDetail" hidden><div class="view-hd"></div><div class="v-body" id="detailBody"></div>
+  <footer class="disc v-disc"><p data-disc></p><button type="button" class="about-btn" data-about aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vPortfolio" hidden><div class="view-hd"></div><div class="v-body" id="portfolioBody"></div>
+  <footer class="disc v-disc"><p data-disc></p><button type="button" class="about-btn" data-about aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<main class="view vdetail" id="vViewer" hidden><div class="view-hd"></div><div class="v-body" id="viewerBody"></div>
+  <footer class="disc v-disc"><p data-disc></p><button type="button" class="about-btn" data-about aria-haspopup="dialog">About ArtemisTwin</button></footer></main>
+<dialog class="about reg" id="registry" aria-labelledby="regH">
+  <div class="about-in reg-in"><button type="button" class="about-x" data-close>Close</button><h2 id="regH">Data Registry</h2><div id="regBody"></div></div>
+</dialog>
+<dialog class="about reg" id="aiuse" aria-labelledby="aiH">
+  <div class="about-in reg-in"><button type="button" class="about-x" data-close>Close</button><h2 id="aiH">AI-use record</h2><div id="aiBody"></div></div>
+</dialog>
+<dialog class="about" id="about" aria-labelledby="aboutH">
+  <div class="about-in">
+    <button type="button" class="about-x" id="aboutClose" data-close>Close</button>
+    <h2 class="vh" id="aboutH">About ArtemisTwin</h2>
+    <div class="lg lg-about" role="img" aria-label="ArtemisTwin — Exploration &amp; Analogs">
+      <div class="lg-e"><img src="/assets/emblem-240-Zn9TeycG.webp" srcset="/assets/emblem-36-CsLg2QHC.webp 38w, /assets/emblem-46-CqTmR6-f.webp 48w, /assets/emblem-72-Bk73DPpK.webp 75w, /assets/emblem-92-DieZSNMc.webp 96w, /assets/emblem-138-xZ5B5o4b.webp 145w, /assets/emblem-160-Cizr7hTM.webp 168w, /assets/emblem-240-Zn9TeycG.webp 251w, /assets/emblem-402-CCyScuL0.webp 421w" sizes="197px" width="421" height="402" alt="" fetchpriority="high"><span class="sweep" aria-hidden="true"></span></div>
+      <img class="lg-w" src="/assets/wordmark-36-C18Ey7Py.webp" srcset="/assets/wordmark-18-BszfakJP.webp 145w, /assets/wordmark-23-Dy2sQrnb.webp 185w, /assets/wordmark-36-C18Ey7Py.webp 289w, /assets/wordmark-46-Bjx6U6v8.webp 369w, /assets/wordmark-64-DEN4H-X9.webp 514w" sizes="240px" width="514" height="64" alt="">
+      <img class="lg-g" src="/assets/tagline-16-Di8291iu.webp" srcset="/assets/tagline-8-IFMg-9Vl.webp 148w, /assets/tagline-10-BAMmC8tX.webp 185w, /assets/tagline-16-Di8291iu.webp 295w, /assets/tagline-20-y5B903nH.webp 369w, /assets/tagline-22-DmLcfuHl.webp 406w" sizes="190px" width="406" height="22" alt="">
+      <p class="lg-text" aria-hidden="true">ArtemisTwin<small>EXPLORATION &amp; ANALOGS</small></p>
+    </div>
+    <div class="about-tx">
+      <p>ArtemisTwin compares documented Earth analog candidates for a specific lunar or Martian test: a target, a purpose, and the places on Earth that might stand in for it.</p>
+      <p><strong>ArtemisTwin is an open screening and educational tool, not for operational or astronaut decisions.</strong></p>
+      <p>Terrain resemblance alone does not reproduce the lunar environment. Gravity, vacuum and radiation remain limitations.</p>
+      <p>Comparable conditions stay marked “Evidence pending” until paired, source-backed observations and a stated method exist. The list is in catalog order, not a ranking.</p>
+      <h3>Credits</h3>
+      <ul class="about-cr" id="aboutCredits"><li>Basemap: Blue Marble, August 2004 (MODIS / NASA Earth Observatory) via NASA GIBS.</li><li>Typefaces: Big Shoulders Display and Instrument Sans, SIL Open Font License.</li></ul>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>

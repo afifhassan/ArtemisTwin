@@ -1,0 +1,38 @@
+{
+  "type": "Feature",
+  "properties": {
+    "site_id": "mcmurdo",
+    "site_name": "McMurdo Dry Valleys",
+    "window_km": 2,
+    "custom": false,
+    "crs": "EPSG:4326",
+    "note": "Screening window; analytical sample, not an official boundary or land-access claim."
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          162.558167,
+          -77.609044
+        ],
+        [
+          162.641833,
+          -77.609044
+        ],
+        [
+          162.641833,
+          -77.590956
+        ],
+        [
+          162.558167,
+          -77.590956
+        ],
+        [
+          162.558167,
+          -77.609044
+        ]
+      ]
+    ]
+  }
+}

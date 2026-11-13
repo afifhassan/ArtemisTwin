@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:23Z",
+  "product": "LRO Diviner Level 3 global maximum temperature (gds_tmax_global_128)",
+  "url": "https://pds-geosciences.wustl.edu/lro/lro-l-diviner-6-clr-v1/lrodv_8001/data/gds_tmax_global_128.img",
+  "label_url": "https://pds-geosciences.wustl.edu/lro/lro-l-diviner-6-clr-v1/lrodv_8001/data/gds_tmax_global_128.lbl",
+  "status": "endpoint_unavailable",
+  "published_context": {
+    "note": "Published Diviner results describe the Moon's global surface temperature range as roughly 40 K in permanently shadowed polar terrain to about 400 K at the sub-solar point near noon.",
+    "source": "Williams et al. (2017), Icarus 283, 300-325, doi:10.1016/j.icarus.2016.08.012",
+    "use": "Context for the target envelopes only. This build does not claim a site-specific Diviner measurement."
+  },
+  "label_error": "GET failed after 2 attempts: https://pds-geosciences.wustl.edu/lro/lro-l-diviner-6-clr-v1/lrodv_8001/data/gds_tmax_global_128.lbl :: HTTP Error 404: Not Found",
+  "raster_bytes": null,
+  "raster_mb": null,
+  "note": "The legacy PDS path cited in the brief no longer resolves (label and raster returned 404). Published Diviner thermal context is recorded above; no raster measurement is claimed. Use the current PDS Diviner bundle or the Diviner Data Portal to enable raster statistics."
+}

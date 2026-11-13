@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:28Z",
+  "layers": [
+    {
+      "layer_id": "L1",
+      "layer_key": "L1_elevation",
+      "layer_name": "Relief & elevation",
+      "planetary_source": "LRO LOLA / MGS MOLA",
+      "earth_source": "AWS Terrain Tiles (Terrarium) composite",
+      "unit": "m",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Local relief (max − min) inside the 2 × 2 km footprint; absolute elevation kept as context only."
+    },
+    {
+      "layer_id": "L2",
+      "layer_key": "L2_slope",
+      "layer_name": "Slope",
+      "planetary_source": "Derived LOLA / MOLA",
+      "earth_source": "Derived from Terrarium DEM (Horn 3×3)",
+      "unit": "degrees",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Mean slope over the footprint at the sampled grid."
+    },
+    {
+      "layer_id": "L3",
+      "layer_key": "L3_roughness",
+      "layer_name": "Roughness (TRI)",
+      "planetary_source": "Derived LOLA / MOLA",
+      "earth_source": "Derived from Terrarium DEM (Riley 1999)",
+      "unit": "index",
+      "category": "Terrain",
+      "comparability": "direct",
+      "basis": "Terrain Ruggedness Index, dimensionless (metres of neighbour difference per cell metre)."
+    },
+    {
+      "layer_id": "L4_max",
+      "layer_key": "L4_temperature_max",
+      "layer_name": "Surface temperature, warm month",
+      "planetary_source": "LRO Diviner / THEMIS",
+      "earth_source": "NASA POWER Earth skin temperature (TS) climatology",
+      "unit": "Celsius",
+      "category": "Thermal",
+      "comparability": "proxy",
+      "basis": "Warmest monthly climatological skin temperature. Air temperature is not surface temperature; flagged as a proxy."
+    },
+    {
+      "layer_id": "L4_min",
+      "layer_key": "L4_temperature_min",
+      "layer_name": "Surface temperature, cold month",
+      "planetary_source": "LRO Diviner / THEMIS",
+      "earth_source": "NASA POWER Earth skin temperature (TS) climatology",
+      "unit": "Celsius",
+      "category": "Thermal",
+      "comparability": "proxy",
+      "basis": "Coldest monthly climatological skin temperature; proxy for surface radiant temperature."
+    },
+    {
+      "layer_id": "L5",
+      "layer_key": "L5_solar_illumination",
+      "layer_name": "Solar irradiance",
+      "planetary_source": "NASA SPICE / Diviner illumination models",
+      "earth_source": "NASA POWER ALLSKY_SFC_SW_DWN climatology",
+      "unit": "W/m^2",
+      "category": "Illumination",
+      "comparability": "proxy",
+      "basis": "Annual mean all-sky shortwave downward irradiance, converted from kWh/m²/day."
+    },
+    {
+      "layer_id": "L6",
+      "layer_key": "L6_surface_pressure",
+      "layer_name": "Surface pressure",
+      "planetary_source": "Vacuum / Viking / MSL",
+      "earth_source": "NASA POWER PS climatology",
+      "unit": "kPa",
+      "category": "Atmospheric",
+      "comparability": "excluded",
+      "basis": "Reported for context. Excluded from the fit because no Earth surface site reproduces a lunar vacuum or the ~0.6 kPa Martian atmosphere."
+    },
+    {
+      "layer_id": "L7",
+      "layer_key": "L7_ice_volatiles",
+      "layer_name": "Ice & volatiles",
+      "planetary_source": "LEND / SHARAD / MRO",
+      "earth_source": "Not acquired (SMAP / MODIS snow not wired in this build)",
+      "unit": "VWE %",
+      "category": "Volatiles",
+      "comparability": "proxy",
+      "basis": "Water-equivalent percentage. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L8",
+      "layer_key": "L8_mineralogy",
+      "layer_name": "Mineralogy index",
+      "planetary_source": "M3 / CRISM",
+      "earth_source": "Not acquired (EMIT / ASTER not wired in this build)",
+      "unit": "index",
+      "category": "Geology",
+      "comparability": "proxy",
+      "basis": "Normalised spectral index. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L9",
+      "layer_key": "L9_dust_hazard",
+      "layer_name": "Dust & wind hazard",
+      "planetary_source": "PDS dust opacity / MERRA-2",
+      "earth_source": "NASA POWER AOD_55 climatology",
+      "unit": "index",
+      "category": "Atmospheric",
+      "comparability": "proxy",
+      "basis": "Aerosol optical depth at 550 nm mapped to 0–1 by min(1, AOD/0.8). A haze proxy, not a regolith-abrasion measurement."
+    },
+    {
+      "layer_id": "L10",
+      "layer_key": "L10_rock_abundance",
+      "layer_name": "Rock abundance",
+      "planetary_source": "LROC / HiRISE",
+      "earth_source": "Not acquired (needs field survey or high-resolution imagery)",
+      "unit": "% coverage",
+      "category": "Hazards",
+      "comparability": "proxy",
+      "basis": "Percent rock cover. No Earth value in this build; shown as a named gap."
+    },
+    {
+      "layer_id": "L11",
+      "layer_key": "L11_cave_proximity",
+      "layer_name": "Cave proximity",
+      "planetary_source": "LROC pits / GRAIL",
+      "earth_source": "Not acquired (OSM cave entrances not queried)",
+      "unit": "km",
+      "category": "Subterranean",
+      "comparability": "proxy",
+      "basis": "Distance to nearest documented cave or lava-tube entrance. No Earth value in this build."
+    },
+    {
+      "layer_id": "L12",
+      "layer_key": "L12_access",
+      "layer_name": "Access & operational gates",
+      "planetary_source": "N/A",
+      "earth_source": "Not acquired (WDPA / OSM not queried)",
+      "unit": "km to road",
+      "category": "Logistics",
+      "comparability": "context",
+      "basis": "Context column only; weight 0 in every purpose so logistics never moves the fit score."
+    }
+  ],
+  "note": "Comparability: direct | proxy | excluded | context. Proxy layers receive half weight; excluded layers are never scored."
+}

@@ -1,0 +1,11 @@
+{
+ "name": "ArtemisTwin",
+ "short_name": "ArtemisTwin",
+ "icons": [
+  { "src": "brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+  { "src": "brand/icon-512.png", "sizes": "512x512", "type": "image/png" }
+ ],
+ "background_color": "#B9B7B0",
+ "theme_color": "#B9B7B0",
+ "display": "browser"
+}

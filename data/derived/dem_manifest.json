@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "checked": "2026-11-13T07:10:18Z",
+  "earthdata_user": "afifhassan",
+  "earthdata_token_expires": "2027-01-09T19:24:20+00:00",
+  "download_budget_mb": 250.0,
+  "downloads": [
+    {
+      "id": "moon_lola_118m",
+      "body": "Moon",
+      "product": "LRO LOLA Global LDEM 118 m (Mar 2014)",
+      "url": "https://planetarymaps.usgs.gov/mosaic/Moon_LRO_LOLA_Global_LDEM_118m_Mar2014.tif",
+      "product_page": "https://astrogeology.usgs.gov/search/map/moon_lro_lola_global_ldem_118m",
+      "local_path": "data/raw_dems/moon_lola_118m.tif",
+      "status": "endpoint_retired",
+      "size_bytes": null,
+      "size_mb": null,
+      "http_status": 404,
+      "tls_verified": true,
+      "sha256": null,
+      "checked": "2026-11-13T07:10:08Z",
+      "note": "Legacy URL returned HTTP 404. USGS reorganized its planetary map service; download from the product page (https://astrogeology.usgs.gov/search/map/moon_lro_lola_global_ldem_118m) and place the file here.",
+      "citation": "Smith et al. (2010), LRO LOLA; USGS Astrogeology mosaic."
+    },
+    {
+      "id": "mars_mola_463m",
+      "body": "Mars",
+      "product": "MGS MOLA DEM 463 m",
+      "url": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_geotiff/Mars_MGS_MOLA_DEM_463m.tif",
+      "product_page": "https://astrogeology.usgs.gov/search/?q=MOLA%20DEM%20463",
+      "local_path": "data/raw_dems/mars_mola_463m.tif",
+      "status": "endpoint_retired",
+      "size_bytes": null,
+      "size_mb": null,
+      "http_status": 404,
+      "tls_verified": true,
+      "sha256": null,
+      "checked": "2026-11-13T07:10:18Z",
+      "note": "Legacy URL returned HTTP 404. USGS reorganized its planetary map service; download from the product page (https://astrogeology.usgs.gov/search/?q=MOLA%20DEM%20463) and place the file here.",
+      "citation": "Smith et al. (2001), MGS MOLA; USGS Astrogeology mosaic."
+    }
+  ],
+  "earthdata_dem": {
+    "status": "not_requested",
+    "note": "Pass --earthdata-dem after installing earthaccess + rasterio to fetch NASADEM/COP-30 tiles."
+  },
+  "earth_terrain_strategy": {
+    "primary": "AWS Terrain Tiles (Terrarium) sampled per 2 × 2 km site window",
+    "why": "Public, keyless, cacheable and adequate for footprint-scale slope/TRI. NASADEM_NC and COP_DEM_GLO_30_DG remain the preferred products once earthaccess/rasterio are installed.",
+    "upgrade_path": "pip install earthaccess rasterio && python scripts/download_dems.py --earthdata-dem"
+  }
+}

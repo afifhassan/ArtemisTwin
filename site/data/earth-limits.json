@@ -1,0 +1,108 @@
+{
+ "schemaVersion": "1.0",
+ "checked": "2026-11-09",
+ "note": "Conditions an Earth surface site cannot reproduce for a lunar or Martian target, with sourced laboratory alternatives where one was found. Values are quoted from the linked pages; nothing here is a measurement of a catalog site.",
+ "sources": {
+  "nssdc_moon": {
+   "title": "Moon Fact Sheet",
+   "publisher": "NASA NSSDCA",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+   "pageUpdated": "2024-01-11",
+   "retrieved": "2026-11-09"
+  },
+  "nssdc_mars": {
+   "title": "Mars Fact Sheet",
+   "publisher": "NASA NSSDCA",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+   "pageUpdated": "2025-05-19",
+   "retrieved": "2026-11-09"
+  },
+  "nssdc_earth": {
+   "title": "Earth Fact Sheet",
+   "publisher": "NASA NSSDCA",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+   "pageUpdated": "2024-11-15",
+   "retrieved": "2026-11-09"
+  },
+  "nsrl": {
+   "title": "NASA Space Radiation Laboratory",
+   "publisher": "Brookhaven National Laboratory / NASA",
+   "url": "https://www.bnl.gov/nsrl/",
+   "retrieved": "2026-11-09"
+  },
+  "flight_opps": {
+   "title": "Flight Opportunities",
+   "publisher": "NASA Space Technology Mission Directorate",
+   "url": "https://www.nasa.gov/stmd-flight-opportunities/",
+   "pageUpdated": "2026-10-02",
+   "retrieved": "2026-11-09",
+   "note": "Programme page: routes to commercial flights and possible funding are described; not assessed for this project."
+  },
+  "sec": {
+   "title": "Space Environments Complex",
+   "publisher": "NASA Glenn Research Center (Neil Armstrong Test Facility, Sandusky, Ohio)",
+   "url": "https://www.nasa.gov/centers-and-facilities/glenn/space-environments-complex/",
+   "pageDate": "2025-03-29",
+   "retrieved": "2026-11-09",
+   "note": "Quoted: ‘ultimate empty-chamber vacuum capability of < 4×10⁻⁶ Torr’; cryoshroud ‘provides a high-emissivity thermal background environment of –160°C to 80°C’."
+  }
+ },
+ "limits": [
+  {
+   "id": "gravity",
+   "label": "Gravity",
+   "criterionId": null,
+   "earth": "9.82 m/s² mean surface gravity",
+   "earthSource": "nssdc_earth",
+   "Moon": "1.62 m/s²",
+   "MoonSource": "nssdc_moon",
+   "Mars": "3.73 m/s² mean",
+   "MarsSource": "nssdc_mars",
+   "why": "No Earth surface site has lower gravity, so loads, traction and dust behaviour on the ground differ.",
+   "alternative": "Short reduced-gravity periods on parabolic flights. NASA Flight Opportunities records an example: a University of California, Davis team tested CubeSat reaction wheels on parabolic flights in December 2021, provided by Zero Gravity Corporation through TechFlights. The programme describes several routes to commercial test flights and says funds may be available; availability and eligibility have not been assessed for this project.",
+   "alternativeSource": "flight_opps"
+  },
+  {
+   "id": "pressure",
+   "label": "Atmospheric pressure and vacuum",
+   "criterionId": "pressure",
+   "earth": "1014 mb surface pressure",
+   "earthSource": "nssdc_earth",
+   "Moon": "about 3 × 10⁻¹⁵ bar at night: a near-vacuum (total atmosphere about 25,000 kg)",
+   "MoonSource": "nssdc_moon",
+   "Mars": "6.36 mb mean (4.0 to 8.7 mb by season); 95.1 % carbon dioxide",
+   "MarsSource": "nssdc_mars",
+   "why": "Every Earth surface site sits under roughly 1 bar of nitrogen-oxygen air, so this condition is excluded from Earth site matching.",
+   "alternative": "High-vacuum chambers. NASA gives the Space Environments Complex an ultimate empty-chamber vacuum capability below 4 × 10⁻⁶ Torr, reached in under 8 hours, and describes the chamber as a simulated low-Earth-orbit environment. This is an empty-chamber capability; the pressure reached with a test article inside has not been sourced. It is not a Mars-pressure carbon-dioxide atmosphere, and no Mars-atmosphere chamber has been sourced here. Offered on a full-cost reimbursable basis; suitability for a given test has not been assessed.",
+   "alternativeSource": "sec"
+  },
+  {
+   "id": "radiation",
+   "label": "Space radiation",
+   "criterionId": null,
+   "earth": "Earth's atmosphere and surface conditions differ from open space; no surface dose value was checked for this build.",
+   "earthSource": null,
+   "Moon": "Not quantified here (no dose source checked).",
+   "MoonSource": null,
+   "Mars": "Not quantified here (no dose source checked).",
+   "MarsSource": null,
+   "why": "Cosmic-ray exposure on an airless or thin-atmosphere surface is not reproduced at an Earth field site.",
+   "alternative": "The NASA Space Radiation Laboratory at Brookhaven uses heavy-ion beams \"to simulate the high energy cosmic rays found in space\", for radiobiology and electronic-device studies. Access and suitability have not been assessed for this project.",
+   "alternativeSource": "nsrl"
+  },
+  {
+   "id": "temperature",
+   "label": "Temperature range",
+   "criterionId": "temperature_extremes",
+   "earth": "Depends on the site; no temperature evidence is prepared for any catalog site yet.",
+   "earthSource": null,
+   "Moon": "Environmental reference: 95 K to 390 K diurnal surface range at the equator",
+   "MoonSource": "nssdc_moon",
+   "Mars": "Environmental reference: 184 K to 242 K diurnal range at the Viking 1 lander site; average about 214 K",
+   "MarsSource": "nssdc_mars",
+   "why": "Not excluded: an Earth site may reach part of the range, but nothing is measured yet, so the condition stays Unknown rather than excluded.",
+   "alternative": "Thermal-vacuum testing. NASA describes the Space Environments Complex cryoshroud as a high-emissivity thermal background environment of –160 °C to +80 °C (about 113 K to 353 K) inside the vacuum chamber. This is the cryoshroud’s thermal background range, not a test-article or surface temperature, so it is not compared with the planetary temperatures, which are listed separately as environmental references. Suitability for a given test has not been assessed.",
+   "alternativeSource": "sec"
+  }
+ ]
+}

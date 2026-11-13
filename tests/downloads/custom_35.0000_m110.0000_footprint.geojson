@@ -1,0 +1,38 @@
+{
+  "type": "Feature",
+  "properties": {
+    "site_id": "custom_35.0000_m110.0000",
+    "site_name": "Custom site 35.000°N, 110.000°W",
+    "window_km": 2,
+    "custom": true,
+    "crs": "EPSG:4326",
+    "note": "User-selected window sampled on demand from AWS Terrarium z14. Not a surveyed or permitted boundary."
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -110.010966,
+          34.990956
+        ],
+        [
+          -109.989034,
+          34.990956
+        ],
+        [
+          -109.989034,
+          35.009044
+        ],
+        [
+          -110.010966,
+          35.009044
+        ],
+        [
+          -110.010966,
+          34.990956
+        ]
+      ]
+    ]
+  }
+}

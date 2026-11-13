@@ -1,0 +1,112 @@
+{
+ "note": "Context images for Target & Purpose. Not measured or processed data; derivatives of NASA reference images.",
+ "images": {
+  "moon-south-pole-slope": {
+   "source": "lunar_slope.jpg",
+   "crop": null,
+   "variants": [
+    {
+     "src": "img/targets/moon-south-pole-slope-560.webp",
+     "w": 560,
+     "h": 581,
+     "bytes": 104206,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/moon-south-pole-slope-560.avif",
+     "w": 560,
+     "h": 581,
+     "bytes": 65527,
+     "type": "avif"
+    },
+    {
+     "src": "img/targets/moon-south-pole-slope-1100.webp",
+     "w": 1100,
+     "h": 1141,
+     "bytes": 363084,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/moon-south-pole-slope-1100.avif",
+     "w": 1100,
+     "h": 1141,
+     "bytes": 217918,
+     "type": "avif"
+    }
+   ]
+  },
+  "mars-north-mola": {
+   "source": "mola.jpg",
+   "crop": [
+    52,
+    0,
+    5772,
+    5720
+   ],
+   "variants": [
+    {
+     "src": "img/targets/mars-north-mola-560.webp",
+     "w": 560,
+     "h": 560,
+     "bytes": 56092,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/mars-north-mola-560.avif",
+     "w": 560,
+     "h": 560,
+     "bytes": 38537,
+     "type": "avif"
+    },
+    {
+     "src": "img/targets/mars-north-mola-1100.webp",
+     "w": 1100,
+     "h": 1100,
+     "bytes": 222814,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/mars-north-mola-1100.avif",
+     "w": 1100,
+     "h": 1100,
+     "bytes": 137412,
+     "type": "avif"
+    }
+   ]
+  },
+  "moon-marius-hills-pit": {
+   "source": "marius-hills-pit.jpg",
+   "crop": null,
+   "variants": [
+    {
+     "src": "img/targets/moon-marius-hills-pit-560.webp",
+     "w": 560,
+     "h": 560,
+     "bytes": 31948,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/moon-marius-hills-pit-560.avif",
+     "w": 560,
+     "h": 560,
+     "bytes": 25358,
+     "type": "avif"
+    },
+    {
+     "src": "img/targets/moon-marius-hills-pit-1000.webp",
+     "w": 1000,
+     "h": 1000,
+     "bytes": 98790,
+     "type": "webp"
+    },
+    {
+     "src": "img/targets/moon-marius-hills-pit-1000.avif",
+     "w": 1000,
+     "h": 1000,
+     "bytes": 84890,
+     "type": "avif"
+    }
+   ]
+  }
+ }
+}

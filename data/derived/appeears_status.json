@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:22Z",
+  "api": "https://appeears.earthdatacloud.nasa.gov/api",
+  "product": "MOD11A1.061",
+  "layers": [
+    "LST_Day_1km",
+    "LST_Night_1km"
+  ],
+  "status": "auth_failed",
+  "note": "{'error': '{\"message\": \"You don\\'t have the permission to access the requested resource. It is either read-protected or not readable by the server.\"}\\n'}",
+  "task_id": null,
+  "files": [],
+  "token_check": {
+    "http_status": 403,
+    "ok": false
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "version": "1.0.0",
+  "generated": "2026-11-13T07:10:33Z",
+  "note": "Additive ES modules; the original Vite bundle is unchanged.",
+  "files": {
+    "analog-fit.css": {
+      "bytes": 24796,
+      "sha256": "c419d1e23e9435cc44b1cd05e9bd4bd441b466cbab01ecf7e4dfade0212bb34b"
+    },
+    "analog-fit.js": {
+      "bytes": 6162,
+      "sha256": "189095835eff4c30e5ff266be4f27fdad9de1022895bfc0a5ce246c6f2be082d"
+    },
+    "comparison.js": {
+      "bytes": 27497,
+      "sha256": "43b5d8d26c970d7a6d438eb25e0d3b45c05b48b8177545eb5ff177026cf3d75e"
+    },
+    "custom-site.js": {
+      "bytes": 18597,
+      "sha256": "cbdb5f135c6803f7cdaf4391a0c8badd427ea3c107b9e1cdd2de8edbdd2b879a"
+    },
+    "dom.js": {
+      "bytes": 677,
+      "sha256": "7edd4e7220297790f26dc108d1dcb90c03930e3074c761a645463f2aaac272aa"
+    },
+    "format.js": {
+      "bytes": 3100,
+      "sha256": "da21908420c6fe782577e8a6ebaa9700cb12050fdfbc651a4f27d8c2e36b7773"
+    },
+    "live-apis.js": {
+      "bytes": 8124,
+      "sha256": "bcd900cb6a92f31ed96928e2756e5aefc8504ecff7ba762864ae98859bdf4447"
+    },
+    "live-view.js": {
+      "bytes": 1355,
+      "sha256": "ff259db34fe434612370ded0d2c64b9cee5136570bb53e5ef90340f3a3ae6d3d"
+    },
+    "map.js": {
+      "bytes": 10279,
+      "sha256": "b36f9e035f4dcf25f017917be9d7289c3dd4ec57fabff14cf76890f2a8eee30e"
+    },
+    "metrics.js": {
+      "bytes": 7321,
+      "sha256": "399a7bb7347fd4ea4e8d074d1e982d26b76c99592337dfd0f5276f50be3ceb74"
+    },
+    "portfolio.js": {
+      "bytes": 5451,
+      "sha256": "6be7e1cba80b1db9d81762557490d7575390186f6f0fcf37aecb4c5d4cfbe0f2"
+    },
+    "profile.js": {
+      "bytes": 6783,
+      "sha256": "b2dc630718ca5571247dc23d232755652735e7f80742b6de5558b5e77444275f"
+    },
+    "screening.js": {
+      "bytes": 19153,
+      "sha256": "15d0aab7c6fd67f7b0c851afacf2cfe1873f1e9353b00d03b8d44034cbecb885"
+    },
+    "screens.js": {
+      "bytes": 28278,
+      "sha256": "0627c683d1030020d4eccd46cb3d7907113c6e6e98d030ffb2afc03721e85277"
+    },
+    "state.js": {
+      "bytes": 4873,
+      "sha256": "e199bcd39ecebf9ffc966baee8f691f70311dd67021019b819c0e484c10fd913"
+    },
+    "viewer.js": {
+      "bytes": 3909,
+      "sha256": "8169ed615f7830fe1f8b5acc28784d74f782abfabdab353c4d11f2c62fc09a0b"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2026-11-13T07:10:29Z",
+  "seconds": 26.7,
+  "quick": false,
+  "stages": [
+    {
+      "stage": "download",
+      "status": "ok",
+      "seconds": 15.7,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/download_dems.py"
+    },
+    {
+      "stage": "terrain",
+      "status": "ok",
+      "seconds": 3.6,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/derive_slope_roughness.py"
+    },
+    {
+      "stage": "climate",
+      "status": "ok",
+      "seconds": 0.3,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/nasa_power_climate.py"
+    },
+    {
+      "stage": "appeears",
+      "status": "ok",
+      "seconds": 1.1,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/appeears_lst_download.py"
+    },
+    {
+      "stage": "diviner",
+      "status": "ok",
+      "seconds": 4.9,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/diviner_lunar_temp.py"
+    },
+    {
+      "stage": "zonal",
+      "status": "ok",
+      "seconds": 0.2,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/zonal_stats_extractor.py"
+    },
+    {
+      "stage": "scoring",
+      "status": "ok",
+      "seconds": 0.5,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/scoring_engine.py"
+    },
+    {
+      "stage": "export",
+      "status": "ok",
+      "seconds": 0.3,
+      "command": "C:\\Users\\YOU\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe scripts/export_data.py"
+    }
+  ],
+  "ok": true
+}

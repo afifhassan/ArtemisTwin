@@ -1,0 +1,471 @@
+{
+  "version": "0.8.0-rc.1",
+  "technicalChecksPass": true,
+  "checks": 102,
+  "passed": 102,
+  "results": [
+    {
+      "name": "P7 1440: cold map library pending then usable",
+      "pass": true
+    },
+    {
+      "name": "P7 1440: picker / CTA",
+      "pass": true
+    },
+    {
+      "name": "P7 1440: coordinates relocated",
+      "pass": true
+    },
+    {
+      "name": "P7 1440: Edit portfolio keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "P7 1440: charts / controls",
+      "pass": true
+    },
+    {
+      "name": "P7 390: cold map library pending then usable",
+      "pass": true
+    },
+    {
+      "name": "P7 390: picker / CTA",
+      "pass": true
+    },
+    {
+      "name": "P7 390: coordinates relocated",
+      "pass": true
+    },
+    {
+      "name": "P7 390: Edit portfolio keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "P7 390: charts / controls",
+      "pass": true
+    },
+    {
+      "name": "P7 320: cold map library pending then usable",
+      "pass": true
+    },
+    {
+      "name": "P7 320: picker / CTA",
+      "pass": true
+    },
+    {
+      "name": "P7 320: coordinates relocated",
+      "pass": true
+    },
+    {
+      "name": "P7 320: Edit portfolio keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "P7 320: charts / controls",
+      "pass": true
+    },
+    {
+      "name": "SWIM QA only",
+      "pass": true
+    },
+    {
+      "name": "chromium 1440: scale values",
+      "pass": true
+    },
+    {
+      "name": "chromium 1440: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "chromium 1440: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "chromium 390: scale values",
+      "pass": true
+    },
+    {
+      "name": "chromium 390: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "chromium 390: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "chromium 320: scale values",
+      "pass": true
+    },
+    {
+      "name": "chromium 320: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "chromium 320: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "chromium: 15 WCAG scans",
+      "pass": true
+    },
+    {
+      "name": "chromium: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "firefox 1440: scale values",
+      "pass": true
+    },
+    {
+      "name": "firefox 1440: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "firefox 1440: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "firefox 390: scale values",
+      "pass": true
+    },
+    {
+      "name": "firefox 390: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "firefox 390: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "firefox 320: scale values",
+      "pass": true
+    },
+    {
+      "name": "firefox 320: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "firefox 320: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "firefox: 15 WCAG scans",
+      "pass": true
+    },
+    {
+      "name": "firefox: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "webkit 1440: scale values",
+      "pass": true
+    },
+    {
+      "name": "webkit 1440: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "webkit 1440: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "webkit 390: scale values",
+      "pass": true
+    },
+    {
+      "name": "webkit 390: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "webkit 390: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "webkit 320: scale values",
+      "pass": true
+    },
+    {
+      "name": "webkit 320: retained portfolio",
+      "pass": true
+    },
+    {
+      "name": "webkit 320: inspection steps",
+      "pass": true
+    },
+    {
+      "name": "webkit: 15 WCAG scans",
+      "pass": true
+    },
+    {
+      "name": "webkit: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "moon_south_pole_ridge/rover_mobility: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_south_pole_ridge/ice_detection: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_south_pole_ridge/cave_robotics: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_south_pole_ridge/habitat_thermal_test: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_lava_tube_region/rover_mobility: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_lava_tube_region/ice_detection: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_lava_tube_region/cave_robotics: scope",
+      "pass": true
+    },
+    {
+      "name": "moon_lava_tube_region/habitat_thermal_test: scope",
+      "pass": true
+    },
+    {
+      "name": "mars_ice_plain/rover_mobility: scope",
+      "pass": true
+    },
+    {
+      "name": "mars_ice_plain/ice_detection: scope",
+      "pass": true
+    },
+    {
+      "name": "mars_ice_plain/cave_robotics: scope",
+      "pass": true
+    },
+    {
+      "name": "mars_ice_plain/habitat_thermal_test: scope",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1440 empty: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1440 empty: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1440 added: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1440 added: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1101 empty: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1101 empty: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1101 added: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1101 added: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1100 empty: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1100 empty: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1100 added: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 1100 added: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 390 empty: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 390 empty: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 390 added: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 390 added: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 320 empty: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 320 empty: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 320 added: no overlap / full width",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 320 added: jump / columns",
+      "pass": true
+    },
+    {
+      "name": "Recovery callbacks completed",
+      "pass": true
+    },
+    {
+      "name": "Catalog Retry / Continue",
+      "pass": true
+    },
+    {
+      "name": "Font cap",
+      "pass": true
+    },
+    {
+      "name": "Missing image fallback",
+      "pass": true
+    },
+    {
+      "name": "Comparison Retry",
+      "pass": true
+    },
+    {
+      "name": "Stale selection",
+      "pass": true
+    },
+    {
+      "name": "Partial profiles",
+      "pass": true
+    },
+    {
+      "name": "Replaced dialog controls after queued close event",
+      "pass": true
+    },
+    {
+      "name": "Graphics fallback and recovery",
+      "pass": true
+    },
+    {
+      "name": "1000 source cell centres",
+      "pass": true
+    },
+    {
+      "name": "35 extra layouts",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion",
+      "pass": true
+    },
+    {
+      "name": "csv-verification",
+      "pass": true
+    },
+    {
+      "name": "spatial-export-verification",
+      "pass": true
+    },
+    {
+      "name": "Root path / unset Fit",
+      "pass": true
+    },
+    {
+      "name": "Empty totals coherent",
+      "pass": true
+    },
+    {
+      "name": "Comparison unchanged",
+      "pass": true
+    },
+    {
+      "name": "Production has no SWIM references or files",
+      "pass": true
+    },
+    {
+      "name": "Guard rejects SWIM fixture",
+      "pass": true
+    },
+    {
+      "name": "Guard rejects missing build",
+      "pass": true
+    },
+    {
+      "name": "Approved brand files unchanged",
+      "pass": true
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.80",
+    "firefox": "158.0",
+    "webkit": "27.2"
+  },
+  "sourceChanges": [
+    "website\\AGENTS.md",
+    "website\\index.html",
+    "website\\package-lock.json",
+    "website\\package.json",
+    "website\\public\\data\\ai-use.json",
+    "website\\scripts\\check-release.mjs",
+    "website\\src\\main.js",
+    "website\\src\\modules\\comparison.js",
+    "website\\src\\modules\\map.js",
+    "website\\src\\modules\\portfolio.js",
+    "website\\src\\modules\\screens.js",
+    "website\\src\\modules\\viewer.js",
+    "website\\src\\styles\\app.css",
+    "website\\src\\styles\\refine.css",
+    "website\\src\\styles\\screens.css",
+    "website\\src\\styles\\tokens.css"
+  ],
+  "comparisonHashes": {
+    "data-prep\\codex-first-comparison\\frontend\\comparison.json": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+    "website\\public\\data\\comparisons\\connecting-ridge_mauna-ulu.bounded-terrain-1.0.json": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+    "website\\dist\\data\\comparisons\\connecting-ridge_mauna-ulu.bounded-terrain-1.0.json": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6",
+    "website\\dist-pages\\data\\comparisons\\connecting-ridge_mauna-ulu.bounded-terrain-1.0.json": "ca2cccda2fa980af2b76a01ead29b0ea2311be7ecbffc7e7764fe6b458f4e3d6"
+  },
+  "performance": {
+    "local-cold": {
+      "runs": 1,
+      "medianIdentityGateMs": 98,
+      "medianLcpMs": 320,
+      "maxCls": 0,
+      "maxObservedInteractionMs": 152
+    },
+    "slow-cold": {
+      "runs": 3,
+      "medianIdentityGateMs": 878,
+      "medianLcpMs": 3536,
+      "maxCls": 0,
+      "maxObservedInteractionMs": 760
+    },
+    "slow-warm": {
+      "runs": 3,
+      "medianIdentityGateMs": 613,
+      "medianLcpMs": 724,
+      "maxCls": 0,
+      "maxObservedInteractionMs": 976
+    }
+  },
+  "delivery": "Frontend files to team; no Git or publication",
+  "p7": "Layout pass; image approval remains pending",
+  "p8": "Team-review release candidate; physical-device, human usability and public-release decisions remain open"
+}
